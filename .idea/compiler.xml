@@ -13,9 +13,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="assignment" target="1.8" />
       <module name="assignment-data" target="1.5" />
       <module name="assignment-web" target="1.5" />
+      <module name="assignment2" target="1.8" />
       <module name="assignment_data" target="1.5" />
       <module name="COMP3095-AssignmentTwo" target="1.5" />
       <module name="data" target="1.8" />

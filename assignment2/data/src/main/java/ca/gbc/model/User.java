@@ -2,6 +2,11 @@ package ca.gbc.model;
 
 public class User {
 
+    private String firstName;
+    private String lastName;
+    private String email;
+    Role role;
+
     public String getFirstName() {
         return firstName;
     }
@@ -34,8 +39,4 @@ public class User {
         this.role = role;
     }
 
-    private String firstName;
-    private String lastName;
-    private String email;
-    Role role;
 }
