@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/COMP3095-AssignmentTwo.iml" filepath="$PROJECT_DIR$/.idea/COMP3095-AssignmentTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment/assignment.iml" filepath="$PROJECT_DIR$/assignment/assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment/data/data.iml" filepath="$PROJECT_DIR$/assignment/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment/web/web.iml" filepath="$PROJECT_DIR$/assignment/web/web.iml" />
     </modules>
   </component>
 </project>
