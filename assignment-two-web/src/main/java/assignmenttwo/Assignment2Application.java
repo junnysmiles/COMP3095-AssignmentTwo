@@ -1,4 +1,4 @@
-package com.assignment2;
+package assignmenttwo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
