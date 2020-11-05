@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     @RequestMapping({"", "/", "/index.html"})
-    public String index() { return "index"; }
+    public String index() { return "login/index"; }
 }
