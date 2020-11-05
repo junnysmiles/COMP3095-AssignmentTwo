@@ -3,8 +3,9 @@ package ca.gbc.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/registration")
+
 @Controller
+@RequestMapping("/registration")
 public class RegistrationController {
 
     @RequestMapping({"", "/", "/index", "/index.html"})
