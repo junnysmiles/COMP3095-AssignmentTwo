@@ -12,14 +12,4 @@ public class IndexController {
 
     @RequestMapping({"", "/", "/index" ,"/index.html"})
     public String index() { return "login/index"; }
-
-    @RequestMapping(value = "/redirect",params = "register", method = RequestMethod.POST)
-    public String register() {
-        return "registration/index";
-    }
-
-    @RequestMapping(value = "/redirect",params = "login", method = RequestMethod.POST)
-    public String dashboard() {
-        return "dashboard/index";
-    }
 }

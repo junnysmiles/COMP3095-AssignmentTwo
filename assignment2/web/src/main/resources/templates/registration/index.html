@@ -9,34 +9,38 @@
 <body>
 <div class="container">
     <h1>Registration</h1>
-    <p th:text="${message}"></p>
-    <form method="post" action="/registration">
+    <form th:action="@{/registration}" th:object="${client}" method="post" >
         <div class="row">
             <div class="col">
                 <label for="firstName">First Name*</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                       th:field="*{firstName}">
             </div>
             <div class="col">
                 <label for="lastName">Last Name*</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                       th:field="*{lastName}">
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="address">Address*</label>
-                <input type="text" class="form-control" id="address" placeholder="Address">
+                <input type="text" class="form-control" id="address" placeholder="Address"
+                       th:field="*{address}">
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="email">Email*</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                       th:field="*{email}">
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="password">Password*</label>
-                <input type="text" class="form-control" id="password" placeholder="Password">
+                <input type="text" class="form-control" id="password" placeholder="Password"
+                       th:field="*{password}">
             </div>
         </div>
         <div class="row">
@@ -59,7 +63,7 @@
             </div>
         </div>
         <button type="submit" name="register" value="register" class="btn btn-primary">Register</button>
-        <button type="submit" name="reset" value="reset" class="btn btn-primary">Reset</button>
+        <button type="button" name="reset" value="reset" class="btn btn-primary"><a href="/registration">Reset</a></button>
     </form>
     <a href="">Forgot your password?</a>
 </div>

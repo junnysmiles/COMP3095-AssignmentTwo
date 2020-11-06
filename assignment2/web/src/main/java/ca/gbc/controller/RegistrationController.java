@@ -9,32 +9,35 @@
  *********************************************************************************/
 package ca.gbc.controller;
 
+import ca.gbc.model.Client;
+import ca.gbc.services.ClientService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
-
+import javax.persistence.EntityManager;
 
 @Controller
 @RequestMapping("/registration")
 public class RegistrationController {
 
+    @Autowired
+    private ClientService clientRepo;
+
     @RequestMapping("")
-    public String display() {
+    public String display(Model model) {
+        model.addAttribute("client", new Client());
         return "registration/index";
     }
     @RequestMapping(params = "register", method = RequestMethod.POST)
-    public String register(Model model, HttpServletResponse response) {
-        System.out.println(response.toString());
-        model.addAttribute("message", "Registration Successful check your email");
-        return "registration/success";
-    }
+    public String register(Model model, Client client) {
+        client.setRoleType("CLIENT");
+        model.addAttribute("client", client);
+        clientRepo.save(client);
 
-    @RequestMapping(params = "reset", method = RequestMethod.POST)
-    public String cancel() {
-        return "registration/index";
+
+        return "registration/success";
     }
 
 }

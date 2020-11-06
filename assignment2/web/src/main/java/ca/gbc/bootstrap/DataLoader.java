@@ -2,7 +2,6 @@ package ca.gbc.bootstrap;
 
 import ca.gbc.model.Admin;
 import ca.gbc.services.AdminService;
-import ca.gbc.services.ClientService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -10,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class DataLoader implements CommandLineRunner {
 
     private final AdminService adminService;
-    private final ClientService clientService;
+    //private final ClientService clientService;
 
-    public DataLoader(AdminService adminService, ClientService clientService){
+    public DataLoader(AdminService adminService){
         this.adminService = adminService;
-        this.clientService = clientService;
+        //this.clientService = clientService;
     }
 
     @Override
@@ -23,7 +22,10 @@ public class DataLoader implements CommandLineRunner {
         admin1.setEmail("admin@isp.net");
         admin1.setFirstName("Nick");
         admin1.setLastName("Chinsen");
+        admin1.setAddress("Toronto");
         admin1.setPassword("P@ssword1");
         admin1.setRoleType("ADMIN");
+
+        adminService.save(admin1);
     }
 }
