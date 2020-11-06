@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <h1>Login</h1>
-    <form>
+    <form method="post" action="/dashboard">
         <div class="form-group">
             <label for="inputUsername">Username</label>
             <input type="email" class="form-control" id="inputUsername" placeholder="Enter Username">
@@ -18,8 +18,8 @@
             <label for="inputPassword">Password</label>
             <input type="password" class="form-control" id="inputPassword" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-        <button type="button" class="btn btn-primary"><a href="">Register</a></button>
+        <button type="submit" name="login" value="login" class="btn btn-primary">Login</button>
+        <button type="button" name="register" value="register" class="btn btn-primary"><a href="/registration">Register</a></button>
     </form>
     <a href="">Forgot your password?</a>
 </div>

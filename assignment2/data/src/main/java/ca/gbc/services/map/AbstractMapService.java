@@ -1,10 +1,8 @@
 package ca.gbc.services.map;
 
-import ca.gbc.model.BaseEntity;
-
 import java.util.*;
 
-public abstract class AbstractMapService<T extends BaseEntity, ID extends Long>{
+public abstract class AbstractMapService<T , ID extends Long>{
     protected Map<Long, T> map = new HashMap<>();
 
     Set<T> findAll() {
@@ -14,15 +12,6 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long>{
     T findById(ID id) { return map.get(id); }
 
     T save(T object) {
-        //check if object is null
-        if(object != null) {
-            if(object.getId() == null) {
-                object.setId(getNextId());
-            }
-            map.put(object.getId(), object);
-        } else {
-            throw new RuntimeException("Object cannot be null");
-        }
         return object;
     }
 

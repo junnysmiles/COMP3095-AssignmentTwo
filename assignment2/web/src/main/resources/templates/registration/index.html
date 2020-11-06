@@ -9,7 +9,8 @@
 <body>
 <div class="container">
     <h1>Registration</h1>
-    <form>
+    <p th:text="${message}"></p>
+    <form method="post" action="/registration">
         <div class="row">
             <div class="col">
                 <label for="firstName">First Name*</label>
@@ -57,8 +58,8 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
-        <button type="button" class="btn btn-primary">Cancel</button>
+        <button type="submit" name="register" value="register" class="btn btn-primary">Register</button>
+        <button type="submit" name="reset" value="reset" class="btn btn-primary">Reset</button>
     </form>
     <a href="">Forgot your password?</a>
 </div>

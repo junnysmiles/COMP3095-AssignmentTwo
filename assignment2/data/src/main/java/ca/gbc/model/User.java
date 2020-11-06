@@ -1,7 +1,12 @@
 package ca.gbc.model;
 
-public class User extends BaseEntity{
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class User {
+
+    @Id
     private String firstName;
     private String lastName;
     private String email;
@@ -36,11 +41,11 @@ public class User extends BaseEntity{
 
     public void setPassword(String password) { this.password = password; }
 
-    public String getRole() {
+    public String getRoleType() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRoleType(String role) {
         this.role = role;
     }
 
