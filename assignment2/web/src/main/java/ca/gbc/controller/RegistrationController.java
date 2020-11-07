@@ -25,7 +25,7 @@ public class RegistrationController {
     @Autowired
     private ClientService clientRepo;
 
-    @RequestMapping("")
+    @RequestMapping({"", "/index", "/index.html"})
     public String display(Model model) {
         model.addAttribute("client", new Client());
         return "registration/index";

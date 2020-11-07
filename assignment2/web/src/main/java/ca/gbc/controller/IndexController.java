@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@RequestMapping("/login")
 @Controller
 public class IndexController {
 
