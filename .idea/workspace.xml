@@ -164,7 +164,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PetClinicWednesday" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -200,7 +200,7 @@
       <workItem from="1606437207414" duration="463000" />
       <workItem from="1606536882030" duration="2997000" />
       <workItem from="1606695575392" duration="4413000" />
-      <workItem from="1606751748534" duration="1282000" />
+      <workItem from="1606751748534" duration="1690000" />
     </task>
     <servers />
   </component>
@@ -257,6 +257,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1400" y="274" key="#Project_Structure" timestamp="1606755687312">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1400" y="274" key="#Project_Structure/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606755687312" />
     <state x="912" y="471" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606437362359">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
