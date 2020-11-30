@@ -43,7 +43,6 @@ public class RegistrationController {
     @RequestMapping({"", "/index", "/index.html"})
     public String display(Model model) {
         model.addAttribute("user", new User());
-        model.addAttribute("address", new Address());
         return "registration/index";
     }
     @RequestMapping(params = "register", method = RequestMethod.POST)

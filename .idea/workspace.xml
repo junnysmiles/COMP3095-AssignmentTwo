@@ -20,30 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/adminUsers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/userListing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/creditProfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/support.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/inbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/repositories/RoleRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/UsersDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/UsersDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/repositories/RoleRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/client/creditProfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/client/creditProfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +128,7 @@
       <workItem from="1606751748534" duration="4921000" />
       <workItem from="1606764450586" duration="12000" />
       <workItem from="1606767025289" duration="1310000" />
-      <workItem from="1606776304408" duration="2052000" />
+      <workItem from="1606776304408" duration="4209000" />
     </task>
     <servers />
   </component>
@@ -210,10 +193,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="912" y="471" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437362359" />
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606777696217">
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606778720346">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606777696217" />
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778720346" />
     <state x="1458" y="628" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604812734104">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -234,45 +217,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1700" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1605668000671" />
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606780188426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188426" />
     <state width="1234" height="410" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606778002295">
+    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606780188426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002295" />
+    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188426" />
     <state width="1234" height="410" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.1.bottom" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.center" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.1.center" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.left" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.1.left" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.right" timestamp="1606778002296">
+    <state width="1234" height="398" key="GridCell.Tab.1.right" timestamp="1606780188427">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
+    <state width="1234" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606780188427" />
     <state width="1234" height="410" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
     <state x="1450" y="368" key="Maven.ArtifactSearchDialog" timestamp="1606437661011">
       <screen x="0" y="0" width="2560" height="1440" />

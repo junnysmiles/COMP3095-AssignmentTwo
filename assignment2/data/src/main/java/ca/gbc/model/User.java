@@ -4,7 +4,7 @@
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
  * Date: 11/07/2020
- * Description: User Entity has 1 to 1 relationship with roles and Generated primary Key
+ * Description: Edited user entity to have an embedded address in-addition to enumerated role
  * ****************************************************************************************************************/
 package ca.gbc.model;
 
@@ -21,10 +21,10 @@ public class User {
     private Long id;
     @Email
     private String email;
-    @Pattern(regexp="([A-Z])\\w+", message="First Name must contain letters")
+    @Pattern(regexp="[A-Za-z]+$", message="First Name must contain letters")
     @NotNull(message = "First Name cannot be empty")
     private String firstName;
-    @Pattern(regexp="([A-Z])\\w+", message="Last Name must contain letters")
+    @Pattern(regexp="[A-Za-z]+$", message="Last Name must contain letters")
     @NotNull(message = "Last Name cannot be empty")
     private String lastName;
     @Pattern(regexp="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,128}$",

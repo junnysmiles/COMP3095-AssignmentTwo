@@ -7,10 +7,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
 </head>
-<body th:object="address">
+<body>
 <div class="container">
     <h1>Registration</h1>
-    <form th:action="@{/registration}" th:object="${user}" method="post" >
+    <form th:action="@{/registration}" th:object="${user}"   method="post" >
         <div class="row">
             <div class="col">
                 <label for="firstName">First Name*</label>
@@ -29,11 +29,30 @@
         </div>
         <div class="row">
             <div class="col">
-                <label for="address">Address*</label>
-                <input type="text" class="form-control" id="address" placeholder="Address"
+                <label for="streetName">Street</label>
+                <input type="text" class="form-control" id="streetName" placeholder="Street"
+                       th:field="*{address.streetName}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City"
                        th:field="*{address.city}">
-                <div class="text text-danger" th:if="${#fields.hasErrors('address')}"
-                     th:errors="*{address.city}"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Country"
+                       th:field="*{address.country}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="postal">Postal</label>
+                <input type="text" class="form-control" id="postal" placeholder="Postal"
+                       th:field="*{address.postal}">
             </div>
         </div>
         <div class="row">
