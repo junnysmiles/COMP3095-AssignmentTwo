@@ -9,9 +9,9 @@
 package ca.gbc.controller;
 
 import ca.gbc.email.EmailConfig;
+import ca.gbc.model.Address;
 import ca.gbc.model.Role;
 import ca.gbc.model.User;
-import ca.gbc.repositories.RoleRepo;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
@@ -32,9 +32,6 @@ public class RegistrationController {
     private UserRepo userRepo;
 
     @Autowired
-    private RoleRepo roleRepo;
-
-    @Autowired
     private PasswordEncoder passwordEncoder;
 
     private EmailConfig emailConfig;
@@ -46,6 +43,7 @@ public class RegistrationController {
     @RequestMapping({"", "/index", "/index.html"})
     public String display(Model model) {
         model.addAttribute("user", new User());
+        model.addAttribute("address", new Address());
         return "registration/index";
     }
     @RequestMapping(params = "register", method = RequestMethod.POST)
@@ -55,10 +53,7 @@ public class RegistrationController {
             System.out.println("BINDING RESULT ERROR");
             return "registration/index";
         } else { //create new client
-            Role role = new Role();
-            role.setName("CLIENT");
-            roleRepo.save(role);
-            user.setRoles(role);
+            user.setRole(Role.CLIENT);
             user.setPassword(passwordEncoder.encode(user.getPassword()));
             model.addAttribute("user", user);
             userRepo.save(user);

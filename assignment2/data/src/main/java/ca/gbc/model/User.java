@@ -15,6 +15,9 @@ import javax.validation.constraints.Pattern;
 
 @Entity
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Email
     private String email;
@@ -28,21 +31,13 @@ public class User {
     message = "Password must be between 6-12 chars and contain 1 uppercase letter and 1 special character")
     @NotNull(message = "Password cannot be empty")
     private String password;
-    private String address;
+
+    @Embedded
+    private Address address;
+
+    @Enumerated(value = EnumType.STRING)
     private Role role;
 
-
-    public User() {}
-    public User(String email, String firstName, String lastName, String address, String password) {
-        this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.password = password;
-        this.address = address;
-    }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {
         return id;
     }
@@ -75,14 +70,6 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -90,15 +77,20 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    @OneToOne
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-    public Role getRoles() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRoles(Role roles) {
-        this.role = roles;
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
 

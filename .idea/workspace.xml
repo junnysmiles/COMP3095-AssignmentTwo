@@ -20,106 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.vs/year_3/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Full_StackComp3123/101075596_comp3123_assig1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Full_StackComp3123/101075596_comp3123_assig1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PetClinicWednesday/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PetClinicWednesday/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PetClinicWednesday/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PetClinicWednesday/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PetClinicWednesday/pet-clinic-wednesday" beforeDir="false" afterPath="$PROJECT_DIR$/../PetClinicWednesday/pet-clinic-wednesday" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/CompasActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/CompasActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/MyCompassView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/java/com/lab6/MyCompassView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/Lab6/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/Assignment 1 F2020.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/androidTest/java/com/example/assignment_1/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/java/com/example/assignment_1/AboutActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/java/com/example/assignment_1/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/layout/activity_about.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/menu/main_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/app/src/test/java/com/example/assignment_1/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/assignments/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/java/com/lab7thursday/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/java/com/lab7thursday/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/java/com/lab7thursday/StudentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/java/com/lab7thursday/StudentProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/lab7Thursday/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/Accelerometer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/Accelerometer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/Gyroscope.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/Gyroscope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labEx5/app/src/main/java/com/labex5/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/Illuminance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/Illuminance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/SensorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/SensorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/java/com/labtest1/Temperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/layout/activity_sensor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/layout/activity_sensor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppcomp3074/labTest1/app/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/Owner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/PetType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/model/Vet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/services/OwnerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/services/PetService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-data/src/main/java/services/VetService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-web/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-web/src/main/java/petclinicwednesday/PetClinicWednesdayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-web/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-clinic-web/src/test/java/petclinicwednesday/PetClinicWednesdayApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proComp2148/nickChinsenResumeAssignment.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../proComp2148/nickChinsenResumeAssignment.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proComp2148/~$ckChinsenResumeAssignment.docx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/adminUsers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/userListing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/creditProfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/support.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/inbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/repositories/RoleRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/UsersDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/UsersDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/repositories/RoleRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/client/creditProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/client/creditProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +54,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -168,13 +93,30 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\web\src\main\resources\templates\dashboard" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\EntityRelationshipModel" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Assignment2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ca.gbc.Assignment2Application" />
@@ -200,7 +142,10 @@
       <workItem from="1606437207414" duration="463000" />
       <workItem from="1606536882030" duration="2997000" />
       <workItem from="1606695575392" duration="4413000" />
-      <workItem from="1606751748534" duration="1690000" />
+      <workItem from="1606751748534" duration="4921000" />
+      <workItem from="1606764450586" duration="12000" />
+      <workItem from="1606767025289" duration="1310000" />
+      <workItem from="1606776304408" duration="2052000" />
     </task>
     <servers />
   </component>
@@ -265,10 +210,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="912" y="471" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437362359" />
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1604945974008">
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606777696217">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604945974008" />
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606777696217" />
     <state x="1458" y="628" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604812734104">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -281,53 +226,53 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1549" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604810790026" />
-    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604858617469">
+    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606776674468">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604858617469" />
+    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606776674468" />
     <state x="1700" y="455" key="FileChooserDialogImpl" timestamp="1605668000671">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1700" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1605668000671" />
-    <state width="1234" height="396" key="GridCell.Tab.0.bottom" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="396" key="GridCell.Tab.0.center" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="396" key="GridCell.Tab.0.left" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606778002295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002295" />
     <state width="1234" height="410" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="396" key="GridCell.Tab.0.right" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="396" key="GridCell.Tab.1.bottom" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="396" key="GridCell.Tab.1.center" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.1.center" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="396" key="GridCell.Tab.1.left" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.1.left" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="396" key="GridCell.Tab.1.right" timestamp="1606702910948">
+    <state width="1234" height="398" key="GridCell.Tab.1.right" timestamp="1606778002296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="396" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606702910948" />
+    <state width="1234" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606778002296" />
     <state width="1234" height="410" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
     <state x="1450" y="368" key="Maven.ArtifactSearchDialog" timestamp="1606437661011">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -338,10 +283,15 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1575" y="433" key="RollbackChangesDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437335371" />
-    <state x="1400" y="274" key="SettingsEditor" timestamp="1606437062672">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="1400" y="266" key="SettingsEditor" timestamp="1606776510469">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1400" y="266" key="SettingsEditor/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606776510469" />
     <state x="1400" y="274" key="SettingsEditor/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437062672" />
+    <state x="1511" y="364" key="new project wizard" timestamp="1606764379445">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1511" y="364" key="new project wizard/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606764379445" />
     <state x="1576" y="334" key="run.anything.popup" timestamp="1604947950779">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
