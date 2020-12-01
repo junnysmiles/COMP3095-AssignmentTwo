@@ -39,6 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                //configuring which routes will be publicly available
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/login", "/registration", "/h2-console/**")
@@ -49,6 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .headers().frameOptions().sameOrigin()
                 .and()
                 .formLogin()
+                    //redirect to dashboard on success
                     .loginPage("/login")
                     .defaultSuccessUrl("/dashboard", true)
                 .and()

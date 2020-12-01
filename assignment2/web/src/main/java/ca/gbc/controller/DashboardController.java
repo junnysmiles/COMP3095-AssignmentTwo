@@ -8,6 +8,7 @@
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 
+import ca.gbc.model.Role;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,15 +30,16 @@ public class DashboardController {
         //find user details by email
         User user = userRepo.findByEmail(authentication.getName());
         model.addAttribute("name", user.getFirstName());
-        return "dashboard/index";
+        //redirect based on admin or client
+        if(user.getRole() == Role.ADMIN){
+            return "dashboard/admin/admin-dash";
+        }
+        return "dashboard/client/client-dash";
     }
 
-    @RequestMapping({"/futureExtension1", "/futureExtension1.html"})
-    public String futureExtension1(Model model, Authentication authentication) {
-        //find user details by email
-        User user = userRepo.findByEmail(authentication.getName());
-        model.addAttribute("name", user.getFirstName());
-        return "dashboard/futureExtension1";
+    @RequestMapping({"/adminDashboard"})
+    public String adminDashboard(){
+        return "dashboard/admin";
     }
 
     @RequestMapping({"/futureExtension2", "/futureExtension2.html"})
