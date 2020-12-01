@@ -2,6 +2,7 @@ package ca.gbc.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 public class Ticket {
@@ -9,14 +10,15 @@ public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private Long ticketNumber;
     private String firstName;
     private String email;
     private String subject;
     private LocalDate timeStamp;
+    private boolean read;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private TicketNumber ticketNumber;
+    @ManyToMany
+    private Set<Inbox> inbox;
 
     public Long getId() {
         return id;
@@ -57,12 +59,11 @@ public class Ticket {
     public void setTimeStamp(LocalDate timeStamp) {
         this.timeStamp = timeStamp;
     }
-
-    public TicketNumber getTicketNumber() {
-        return ticketNumber;
+    public boolean isRead() {
+        return read;
     }
 
-    public void setTicketNumber(TicketNumber ticketNumber) {
-        this.ticketNumber = ticketNumber;
+    public void setRead(boolean read) {
+        this.read = read;
     }
 }

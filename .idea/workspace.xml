@@ -20,25 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/admin-dash.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/inbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/AddressType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Inbox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/TicketNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/TicketNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/creditProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/credit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/futureExtension1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/client-dash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/shared/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/admin-dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/admin-dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/client-dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/client-dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/creditProfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/futureExtension1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/shared/inbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/shared/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/admin/admin-dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/admin/admin-dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/client-dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/client-dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +53,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -148,7 +149,7 @@
       <workItem from="1606751748534" duration="4921000" />
       <workItem from="1606764450586" duration="12000" />
       <workItem from="1606767025289" duration="1310000" />
-      <workItem from="1606776304408" duration="11556000" />
+      <workItem from="1606776304408" duration="19097000" />
     </task>
     <servers />
   </component>
@@ -213,10 +214,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="912" y="471" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437362359" />
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606785477324">
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606807066247">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606785477324" />
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807066247" />
     <state x="1458" y="628" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604812734104">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -229,10 +230,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1549" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604810790026" />
-    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606798634186">
+    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606806636855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606798634186" />
+    <state x="1650" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606806636855" />
     <state x="1667" y="558" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606784957799">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -241,54 +242,55 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1700" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1605668000671" />
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="398" key="GridCell.Tab.1.bottom" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.center" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.1.center" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.left" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.1.left" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="398" key="GridCell.Tab.1.right" timestamp="1606800369588">
+    <state width="1234" height="398" key="GridCell.Tab.1.right" timestamp="1606807968635">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606800369588" />
+    <state width="1234" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606807968635" />
     <state width="1234" height="410" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
     <state x="1450" y="368" key="Maven.ArtifactSearchDialog" timestamp="1606437661011">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1450" y="358" key="Maven.ArtifactSearchDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604879397994" />
     <state x="1450" y="368" key="Maven.ArtifactSearchDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437661011" />
-    <state x="1575" y="433" key="RollbackChangesDialog" timestamp="1606437335371">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="1575" y="421" key="RollbackChangesDialog" timestamp="1606808310831">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1575" y="421" key="RollbackChangesDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606808310831" />
     <state x="1575" y="433" key="RollbackChangesDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437335371" />
     <state x="1400" y="266" key="SettingsEditor" timestamp="1606798218047">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -303,10 +305,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1511" y="364" key="new project wizard/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606764379445" />
-    <state x="1576" y="334" key="run.anything.popup" timestamp="1604947950779">
+    <state x="1576" y="334" key="run.anything.popup" timestamp="1606805145571">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1604947950779" />
+    <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606805145571" />
     <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1606799274738">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

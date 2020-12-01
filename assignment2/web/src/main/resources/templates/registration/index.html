@@ -66,6 +66,27 @@
         </div>
         <div class="row">
             <div class="col">
+                <label for="email">Day of Birth*</label>
+                <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
+                       th:field="*{dob.day}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="email">Month in # format*</label>
+                <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
+                       th:field="*{dob.month}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="email">Year of Birth*</label>
+                <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
+                       th:field="*{dob.year}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <label for="password">Password*</label>
                 <input type="text" class="form-control" id="password" placeholder="Password"
                        th:field="*{password}">

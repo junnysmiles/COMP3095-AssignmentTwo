@@ -4,7 +4,7 @@
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
  * Date: 11/07/2020
- * Description: Edited user entity to have an embedded address in-addition to enumerated role
+ * Description: User entity according to ERM uses java validation
  * ****************************************************************************************************************/
 package ca.gbc.model;
 
@@ -12,6 +12,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -32,6 +33,12 @@ public class User {
     message = "Password must be between 6-12 chars and contain 1 uppercase letter and 1 special character")
     @NotNull(message = "Password cannot be empty")
     private String password;
+    private LocalDate lastLogin;
+    private LocalDate lastUpdate;
+    private LocalDate accountCreated;
+
+    @Embedded
+    private Dob dob;
 
     @Embedded
     private Address address;
@@ -39,8 +46,8 @@ public class User {
     @Enumerated(value = EnumType.STRING)
     private Role role;
 
-    @ManyToMany
-    private Set<Ticket> tickets;
+    @OneToOne
+    private Inbox inbox;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<CreditCard> creditCards;
@@ -98,6 +105,54 @@ public class User {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public LocalDate getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(LocalDate lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
+    public LocalDate getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(LocalDate lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
+
+    public LocalDate getAccountCreated() {
+        return accountCreated;
+    }
+
+    public void setAccountCreated(LocalDate accountCreated) {
+        this.accountCreated = accountCreated;
+    }
+
+    public Set<CreditCard> getCreditCards() {
+        return creditCards;
+    }
+
+    public void setCreditCards(Set<CreditCard> creditCards) {
+        this.creditCards = creditCards;
+    }
+
+    public Inbox getInbox() {
+        return inbox;
+    }
+
+    public void setInbox(Inbox inbox) {
+        this.inbox = inbox;
+    }
+
+    public Dob getDob() {
+        return dob;
+    }
+
+    public void setDob(Dob dob) {
+        this.dob = dob;
     }
 }
 
