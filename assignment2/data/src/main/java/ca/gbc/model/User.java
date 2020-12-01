@@ -12,6 +12,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.Set;
 
 @Entity
 public class User {
@@ -37,6 +38,9 @@ public class User {
 
     @Enumerated(value = EnumType.STRING)
     private Role role;
+
+    @ManyToMany
+    private Set<Ticket> tickets;
 
     public Long getId() {
         return id;
