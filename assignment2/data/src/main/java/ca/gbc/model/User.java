@@ -42,6 +42,9 @@ public class User {
     @ManyToMany
     private Set<Ticket> tickets;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private Set<CreditCard> creditCards;
+
     public Long getId() {
         return id;
     }
