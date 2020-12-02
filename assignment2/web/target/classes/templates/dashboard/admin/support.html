@@ -35,55 +35,115 @@
 </nav>
 <!--CONTENT STARTS HERE-->
 <div class="container">
-    <h1>Dashboard</h1>
-    <div>Hello</div>
+    <h1>Admin Support</h1>
     <div class="row">
-        <div class="card">
-            <div class="card-header">
-                Recent Activity
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Last Login Activity</h5>
-                <hr>
-                <p class="card-text" th:text="${user.lastLogin}">Sunday, November, 29, 2020</p>
-                <h5 class="card-title">Last User Profile Update</h5>
-                <hr>
-                <p class="card-text" th:text="${user.lastUpdate}">N/A</p>
-                <h5 class="card-title">Inbox</h5>
-                <hr>
-                <p class="card-text">Unread: <span>0</span></p>
-                <p class="card-text">Read: <span>0</span></p>
-            </div>
-        </div>
-        <div class="col-sm-6">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Current Profile
+                    Add/Edit Profile
                 </div>
                 <div class="card-body">
-                    <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}">Bosco</span></p>
-                    <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}">Baracus</span></p>
-                    <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}">mrT@ateam.com</span></p>
-                    <p><span style="font-weight: bold">D.O.B.:</span>
-                        <span th:text="${user.dob.day}"></span>
-                        <span th:text="${user.dob.month}"></span>
-                        <span th:text="${user.dob.year}"></span>
-                    </p>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1 A Team Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
+                    <form th:action="@{/registration}" th:object="${user}"   method="post" >
+                        <div class="row">
+                            <div class="col">
+                                <label for="firstName">First Name*</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                       th:field="*{firstName}">
+                                <div class="text text-danger" th:if="${#fields.hasErrors('firstName')}"
+                                     th:errors="*{firstName}"></div>
+                            </div>
+                            <div class="col">
+                                <label for="lastName">Last Name*</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                       th:field="*{lastName}">
+                                <div class="text text-danger" th:if="${#fields.hasErrors('lastName')}"
+                                     th:errors="*{lastName}"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Email*</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email"
+                                       th:field="*{email}">
+                                <div class="text text-danger" th:if="${#fields.hasErrors('email')}"
+                                     th:errors="*{email}"></div>
+                            </div>
+                        </div>
+                        <label>Date of Birth</label>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Day</label>
+                                <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
+                                       th:field="*{dob.day}">
+                            </div>
+                            <div class="col">
+                                <label for="email">Month</label>
+                                <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
+                                       th:field="*{dob.month}">
+                            </div>
+                            <div class="col">
+                                <label for="email">Year</label>
+                                <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
+                                       th:field="*{dob.year}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="streetName">Street</label>
+                                <input type="text" class="form-control" id="streetName" placeholder="Street"
+                                       th:field="*{address.streetName}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="City"
+                                       th:field="*{address.city}">
+                            </div>
+                            <div class="col">
+                                <label for="country">Country</label>
+                                <input type="text" class="form-control" id="country" placeholder="Country"
+                                       th:field="*{address.country}">
+                            </div>
+                            <div class="col">
+                                <label for="postal">Postal</label>
+                                <input type="text" class="form-control" id="postal" placeholder="Postal"
+                                       th:field="*{address.postal}">
+                            </div>
+                        </div>
+                        <button type="submit" name="add" value="add" class="btn btn-primary">Add/Update</button>
+                    </form>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5>Preferred Billing Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1 A Team Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
-                    <h5>Preferred Shipping Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal">1, Venice, Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal">United States</span></p>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">
+                        Admin User Listings
+                    </div>
+                    <div class="card-body">
+                        <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}"></span></p>
+                        <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}"></span></p>
+                        <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}"></span></p>
+                        <p style="font-weight: bold">D.O.B.: <span style="font-weight: normal" th:text="${user.dob.day} + '/'+${user.dob.month}+'/'+${user.dob.year}"></span></p>
+                        <p style="font-weight: bold">Street Address: <span style="font-weight: normal" th:text="${user.address.streetName}"></span></p>
+                        <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}"></span></p>
+                        <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}"></span></p>
+                        <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}"></span></p>
+                        <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}"></span></p>
+                        <p style="font-weight: bold">D.O.B.: <span style="font-weight: normal" th:text="${user.dob.day} + '/'+${user.dob.month}+'/'+${user.dob.year}"></span></p>
+                        <p style="font-weight: bold">Street Address: <span style="font-weight: normal" th:text="${user.address.streetName}"></span></p>
+                        <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}"></span></p>
+                        <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
