@@ -33,7 +33,6 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         User user = new User();
-        Dob dob = new Dob();
         user.setFirstName("Nick");
         user.setLastName("Chinsen");
         user.setPassword(passwordEncoder.encode("P@ssword1"));
@@ -52,7 +51,6 @@ public class DataLoader implements CommandLineRunner {
         userRepo.save(user);
 
         User user2 = new User();
-        Dob dob2 = new Dob();
         user2.setFirstName("Test");
         user2.setLastName("User");
         user2.setPassword(passwordEncoder.encode("pass"));
@@ -71,7 +69,6 @@ public class DataLoader implements CommandLineRunner {
         userRepo.save(user2);
 
         User user3 = new User();
-        Dob dob3 = new Dob();
         user3.setFirstName("Test");
         user3.setLastName("User");
         user3.setPassword(passwordEncoder.encode("pass"));
