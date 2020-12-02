@@ -11,7 +11,6 @@
 package ca.gbc.controller;
 
 import ca.gbc.model.Admin;
-import ca.gbc.model.Role;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;

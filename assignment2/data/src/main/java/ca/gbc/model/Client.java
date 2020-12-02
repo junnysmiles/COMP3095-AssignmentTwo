@@ -11,6 +11,7 @@ package ca.gbc.model;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.Set;
 
 @Entity
@@ -19,4 +20,8 @@ public class Client extends User{
     private Set<CreditCard> creditCards;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "client")
     private Set<Profile> profiles;
+    @OneToOne
+    private Address defaultShipping;
+    @OneToOne
+    private Address defaultBilling;
 }

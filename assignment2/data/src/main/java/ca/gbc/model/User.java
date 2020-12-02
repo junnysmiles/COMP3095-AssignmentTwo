@@ -11,7 +11,6 @@ package ca.gbc.model;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
-import java.util.Set;
 
 @Entity
 public class User {
@@ -53,8 +52,6 @@ public class User {
     private String country;
     @NotBlank(message = "Postal cannot be empty")
     private String postal;
-    @Enumerated(value = EnumType.STRING)
-    private Role role;
 
     @OneToOne
     private Inbox inbox;
@@ -97,13 +94,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
     }
 
     public LocalDate getLastLogin() {

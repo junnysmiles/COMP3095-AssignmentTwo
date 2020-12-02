@@ -10,7 +10,7 @@
 package ca.gbc.controller;
 
 import ca.gbc.email.EmailConfig;
-import ca.gbc.model.Role;
+import ca.gbc.model.Client;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,13 +46,12 @@ public class RegistrationController {
         return "registration/index";
     }
     @RequestMapping(params = "register", method = RequestMethod.POST)
-    public String register(Model model, @Valid @ModelAttribute("user") User user, BindingResult bindingResult) {
+    public String register(Model model, @Valid @ModelAttribute("user") Client user, BindingResult bindingResult) {
         //reroute back to registration if any errors
         if(bindingResult.hasErrors()) {
             System.out.println("BINDING RESULT ERROR");
             return "registration/index";
         } else { //create new client
-            user.setRole(Role.CLIENT);
             user.setPassword(passwordEncoder.encode(user.getPassword()));
             model.addAttribute("user", user);
             userRepo.save(user);
