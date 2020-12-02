@@ -46,4 +46,12 @@ public class Inbox {
     public void setUnreadTickets(Set<Ticket> unreadTickets) {
         this.unreadTickets = unreadTickets;
     }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

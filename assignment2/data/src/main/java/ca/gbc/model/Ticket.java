@@ -15,7 +15,6 @@ public class Ticket {
     private String email;
     private String subject;
     private LocalDate timeStamp;
-    private boolean read;
 
     @ManyToMany
     private Set<Inbox> inbox;
@@ -59,11 +58,20 @@ public class Ticket {
     public void setTimeStamp(LocalDate timeStamp) {
         this.timeStamp = timeStamp;
     }
-    public boolean isRead() {
-        return read;
+
+    public Long getTicketNumber() {
+        return ticketNumber;
     }
 
-    public void setRead(boolean read) {
-        this.read = read;
+    public void setTicketNumber(Long ticketNumber) {
+        this.ticketNumber = ticketNumber;
+    }
+
+    public Set<Inbox> getInbox() {
+        return inbox;
+    }
+
+    public void setInbox(Set<Inbox> inbox) {
+        this.inbox = inbox;
     }
 }

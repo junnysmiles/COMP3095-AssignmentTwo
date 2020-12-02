@@ -49,9 +49,6 @@ public class User {
     @OneToOne
     private Inbox inbox;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private Set<CreditCard> creditCards;
-
     public Long getId() {
         return id;
     }
@@ -129,14 +126,6 @@ public class User {
 
     public void setAccountCreated(LocalDate accountCreated) {
         this.accountCreated = accountCreated;
-    }
-
-    public Set<CreditCard> getCreditCards() {
-        return creditCards;
-    }
-
-    public void setCreditCards(Set<CreditCard> creditCards) {
-        this.creditCards = creditCards;
     }
 
     public Inbox getInbox() {

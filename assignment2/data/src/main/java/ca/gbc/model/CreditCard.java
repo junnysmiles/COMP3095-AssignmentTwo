@@ -8,8 +8,6 @@ public class CreditCard {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
-    private User user;
     @Enumerated(value = EnumType.STRING)
     private CardType cardType;
 
@@ -18,6 +16,9 @@ public class CreditCard {
     private String cardholderName;
     private Long CCNumber;
     private Boolean defaultCC;
+
+    @ManyToOne
+    private Client client;
 
     public Long getId() {
         return id;
@@ -73,5 +74,13 @@ public class CreditCard {
 
     public void setDefaultCC(Boolean defaultCC) {
         this.defaultCC = defaultCC;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }

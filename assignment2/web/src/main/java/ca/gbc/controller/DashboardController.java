@@ -40,33 +40,4 @@ public class DashboardController {
         }
         return "dashboard/client/client-dash";
     }
-
-    @RequestMapping({"/adminDashboard"})
-    public String adminDashboard(){
-        return "dashboard/admin";
-    }
-
-    @RequestMapping({"/futureExtension2", "/futureExtension2.html"})
-    public String futureExtension2(Model model, Authentication authentication) {
-        //find user details by email
-        User user = userRepo.findByEmail(authentication.getName());
-        model.addAttribute("name", user.getFirstName());
-        return "dashboard/futureExtension2";
-    }
-
-    @RequestMapping({"/futureExtension3", "/futureExtension3.html"})
-    public String futureExtension3(Model model, Authentication authentication) {
-        //find user details by email
-        User user = userRepo.findByEmail(authentication.getName());
-        model.addAttribute("name", user.getFirstName());
-        return "dashboard/futureExtension3";
-    }
-
-    @RequestMapping({"/futureExtension4", "futureExtension4.html"})
-    public String futureExtension4(Model model, Authentication authentication) {
-        //find user details by email
-        User user = userRepo.findByEmail(authentication.getName());
-        model.addAttribute("name", user.getFirstName());
-        return "dashboard/futureExtension4";
-    }
 }

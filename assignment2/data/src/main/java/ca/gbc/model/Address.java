@@ -1,10 +1,9 @@
 package ca.gbc.model;
 
-import javax.persistence.Embeddable;
+import javax.persistence.*;
 
 @Embeddable
 public class Address {
-
     private String streetName;
     private String city;
     private String country;
