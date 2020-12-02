@@ -1,10 +1,12 @@
 /*******************************************************************************************************************
  * Project: A Team
- * Assignment: 2
+ * Assignment: 3
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
- * Date: 11/07/2020
- * Description: Dashboard controller including future extensions
+ * Date: 07/11/2020 -Nick Created file
+ *       02/12/2020 -Nick Updated comments for assignment 3
+ * Description: Dashboard controller redirects to client/admin controller depending on
+ *              role type
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 

@@ -1,15 +1,15 @@
 /*******************************************************************************************************************
  * Project: A Team
- * Assignment: 2
+ * Assignment: 3
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
- * Date: 11/07/2020
- * Description: Saves new user to user and role databases
+ * Date: 07/11/2020 -Nick Created file
+ *       29/11/2020 -Nick Modified registration to include new DOB and address
+ * Description: Saves new user and redirects to a success page
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 
 import ca.gbc.email.EmailConfig;
-import ca.gbc.model.Address;
 import ca.gbc.model.Role;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;

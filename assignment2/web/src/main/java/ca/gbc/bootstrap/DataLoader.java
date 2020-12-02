@@ -3,8 +3,10 @@
  * Assignment: 2
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
- * Date: 11/07/2020
- * Description: Data Loader to put in initial admin user into database
+ * Date: 07/11/2020 -Nick created file
+ *       02/12/2020 -Nick added user details for testing
+ * Description: Loads default admin as per reqs, also test admin/client details are
+ *              admin@admin.com pass        client@client.com pass
  * ****************************************************************************************************************/
 package ca.gbc.bootstrap;
 
@@ -16,8 +18,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.Set;
 
 @Component
 public class DataLoader implements CommandLineRunner {

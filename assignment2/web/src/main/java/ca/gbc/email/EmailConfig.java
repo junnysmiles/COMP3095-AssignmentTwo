@@ -1,10 +1,11 @@
 /*******************************************************************************************************************
  * Project: A Team
- * Assignment: 2
+ * Assignment: 3
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
- * Date: 11/07/2020
- * Description: Email configuration for sending registration emails using emailtrap.io email
+ * Date: 07/11/2020 -Nick Created file
+ *       28/11/2020 -Nick Modified email configuration
+ * Description: Used to send emails to users after they register
  * ****************************************************************************************************************/
 package ca.gbc.email;
 

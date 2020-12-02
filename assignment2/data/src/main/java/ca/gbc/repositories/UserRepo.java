@@ -1,9 +1,10 @@
 /*******************************************************************************************************************
  * Project: A Team
- * Assignment: 2
+ * Assignment: 3
  * Author(s): Nicholas Chinsen, Joel Max Abramson, Jun-Yan Gan, Stefan Maric, Kevin Silva
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
- * Date: 11/07/2020
+ * Date: 07/11/2020 -Nick created file
+ *       02/12/2020 -Nick Updated for new model
  * Description: User Repo extending JpaRepository for operations on H2 database
  *              Also contains findByEmail to be implemented
  * ****************************************************************************************************************/
