@@ -193,5 +193,6 @@ public class User {
     public void setPostal(String postal) {
         this.postal = postal;
     }
+
 }
 

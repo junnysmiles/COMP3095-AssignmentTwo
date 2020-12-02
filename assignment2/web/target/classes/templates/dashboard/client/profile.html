@@ -74,41 +74,41 @@
                         <div class="col">
                             <label for="email">Day</label>
                             <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
-                                   th:field="*{dob.day}">
+                                   th:field="*{day}">
                         </div>
                         <div class="col">
                             <label for="email">Month</label>
                             <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
-                                   th:field="*{dob.month}">
+                                   th:field="*{month}">
                         </div>
                         <div class="col">
                             <label for="email">Year</label>
                             <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
-                                   th:field="*{dob.year}">
+                                   th:field="*{year}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="streetName">Street</label>
                             <input type="text" class="form-control" id="streetName" placeholder="Street"
-                                   th:field="*{address.streetName}">
+                                   th:field="*{streetName}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="city">City</label>
                             <input type="text" class="form-control" id="city" placeholder="City"
-                                   th:field="*{address.city}">
+                                   th:field="*{city}">
                         </div>
                         <div class="col">
                             <label for="country">Country</label>
                             <input type="text" class="form-control" id="country" placeholder="Country"
-                                   th:field="*{address.country}">
+                                   th:field="*{country}">
                         </div>
                         <div class="col">
                             <label for="postal">Postal</label>
                             <input type="text" class="form-control" id="postal" placeholder="Postal"
-                                   th:field="*{address.postal}">
+                                   th:field="*{postal}">
                         </div>
                     </div>
                     <button type="submit" name="add" value="add" class="btn btn-primary">Add</button>
@@ -125,10 +125,10 @@
                 </div>
                 <div class="card-body">
                     <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.firstName} + ${ user.lastName}">Bosco</span></p>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">123 Some street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Toronto</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">Canada</span></p>
-                    <p style="font-weight: bold">Default Billing: <span style="font-weight: normal" th:text="${user.address.country}">Yes</span></p>
+                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.streetName}">123 Some street</span></p>
+                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.city}">Toronto</span></p>
+                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.country}">Canada</span></p>
+                    <p style="font-weight: bold">Default Billing: <span style="font-weight: normal" th:text="${user.country}">Yes</span></p>
                 </div>
             </div>
         </div>

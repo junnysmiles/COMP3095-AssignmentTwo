@@ -10,6 +10,7 @@
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 
+import ca.gbc.model.Admin;
 import ca.gbc.model.Role;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;
@@ -37,7 +38,7 @@ public class DashboardController {
         user.setLastLogin(LocalDate.now());
         model.addAttribute("user", user);
         //redirect based on admin or client
-        if(user.getRole() == Role.ADMIN){
+        if(user instanceof Admin){
             return "dashboard/admin/admin-dash";
         }
         return "dashboard/client/client-dash";
