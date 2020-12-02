@@ -21,8 +21,44 @@
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Dob.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Dob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CardType.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CardType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CreditCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CreditCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Dob.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Dob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Inbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Inbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Profile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/repositories/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/repositories/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UserDetailsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UserDetailsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/UsersDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/data-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/data-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/registration/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/Assignment2Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/Assignment2Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/email/EmailConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/email/EmailConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/PasswordConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/PasswordConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/security/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/registration/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/web-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/web-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/web-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +167,7 @@
       <workItem from="1606764450586" duration="12000" />
       <workItem from="1606767025289" duration="1310000" />
       <workItem from="1606776304408" duration="19636000" />
-      <workItem from="1606843283239" duration="16511000" />
+      <workItem from="1606843283239" duration="19515000" />
     </task>
     <servers />
   </component>
@@ -196,10 +232,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="912" y="471" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606437362359" />
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606883854775">
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1606898573047">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606883854775" />
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606898573047" />
     <state x="1458" y="628" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604812734104">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -224,45 +260,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1700" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1605668000671" />
-    <state width="1234" height="559" key="GridCell.Tab.0.bottom" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.0.bottom" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="559" key="GridCell.Tab.0.center" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.0.center" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="559" key="GridCell.Tab.0.left" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.0.left" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="559" key="GridCell.Tab.0.right" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.0.right" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1234" height="559" key="GridCell.Tab.1.bottom" timestamp="1606892788982">
+    <state width="1234" height="434" key="GridCell.Tab.1.bottom" timestamp="1606899203875">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788982" />
+    <state width="1234" height="434" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203875" />
     <state width="1234" height="410" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="559" key="GridCell.Tab.1.center" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.1.center" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="559" key="GridCell.Tab.1.left" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.1.left" timestamp="1606899203874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203874" />
     <state width="1234" height="410" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1234" height="559" key="GridCell.Tab.1.right" timestamp="1606892788981">
+    <state width="1234" height="434" key="GridCell.Tab.1.right" timestamp="1606899203875">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="559" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606892788981" />
+    <state width="1234" height="434" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606899203875" />
     <state width="1234" height="410" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
     <state x="1450" y="368" key="Maven.ArtifactSearchDialog" timestamp="1606437661011">
       <screen x="0" y="0" width="2560" height="1440" />

@@ -31,28 +31,36 @@
             <div class="col">
                 <label for="streetName">Street</label>
                 <input type="text" class="form-control" id="streetName" placeholder="Street"
-                       th:field="*{address.streetName}">
+                       th:field="*{streetName}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('streetName')}"
+                     th:errors="*{streetName}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="city">City</label>
                 <input type="text" class="form-control" id="city" placeholder="City"
-                       th:field="*{address.city}">
+                       th:field="*{city}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('city')}"
+                     th:errors="*{city}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="country">Country</label>
                 <input type="text" class="form-control" id="country" placeholder="Country"
-                       th:field="*{address.country}">
+                       th:field="*{country}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('country')}"
+                     th:errors="*{country}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="postal">Postal</label>
                 <input type="text" class="form-control" id="postal" placeholder="Postal"
-                       th:field="*{address.postal}">
+                       th:field="*{postal}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('postal')}"
+                     th:errors="*{postal}"></div>
             </div>
         </div>
         <div class="row">
@@ -68,27 +76,33 @@
             <div class="col">
                 <label for="email">Day of Birth*</label>
                 <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
-                       th:field="*{dob.day}">
+                       th:field="*{day}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('day')}"
+                     th:errors="*{day}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="email">Month in # format*</label>
                 <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
-                       th:field="*{dob.month}">
+                       th:field="*{month}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('month')}"
+                     th:errors="*{month}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="email">Year of Birth*</label>
                 <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
-                       th:field="*{dob.year}">
+                       th:field="*{year}">
+                <div class="text text-danger" th:if="${#fields.hasErrors('year')}"
+                     th:errors="*{year}"></div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <label for="password">Password*</label>
-                <input type="text" class="form-control" id="password" placeholder="Password"
+                <input type="password" class="form-control" id="password" placeholder="Password"
                        th:field="*{password}">
                 <div class="text text-danger" th:if="${#fields.hasErrors('password')}"
                      th:errors="*{password}"></div>

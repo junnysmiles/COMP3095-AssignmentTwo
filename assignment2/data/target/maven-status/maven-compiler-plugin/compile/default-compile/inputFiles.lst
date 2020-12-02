@@ -1,4 +1,14 @@
-C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\services\AdminService.java
-C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\services\ClientService.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\services\UsersDetailsService.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\CreditCard.java
 C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Client.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\CardType.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Inbox.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Ticket.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Role.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\User.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\services\UserDetailsImpl.java
 C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Admin.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Dob.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\repositories\UserRepo.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Address.java
+C:\Users\nick_\Desktop\year_3\javaWeb\COMP3095-AssignmentTwo\assignment2\data\src\main\java\ca\gbc\model\Profile.java

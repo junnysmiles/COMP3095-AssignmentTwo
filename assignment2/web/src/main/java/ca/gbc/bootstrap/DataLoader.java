@@ -33,66 +33,57 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         User user = new User();
-        Address address = new Address();
         Dob dob = new Dob();
         user.setFirstName("Nick");
         user.setLastName("Chinsen");
         user.setPassword(passwordEncoder.encode("P@ssword1"));
         //set an address
-        address.setCity("Toronto");
-        address.setCountry("Canada");
-        address.setPostal("M4Y 3C4");
-        address.setStreetName("281 Mutual St.");
-        user.setAddress(address);
+        user.setCity("Toronto");
+        user.setCountry("Canada");
+        user.setPostal("M4Y 3C4");
+        user.setStreetName("281 Mutual St.");
         //set date of birth
-        dob.setDay(28);
-        dob.setMonth(10);
-        dob.setYear(1995);
-        user.setDob(dob);
+        user.setDay("28");
+        user.setMonth("10");
+        user.setYear("1995");
         user.setEmail("admin@isp.net");
         user.setAccountCreated(LocalDate.now());
         user.setRole(Role.ADMIN);
         userRepo.save(user);
 
         User user2 = new User();
-        Address address1 = new Address();
         Dob dob2 = new Dob();
         user2.setFirstName("Test");
         user2.setLastName("User");
         user2.setPassword(passwordEncoder.encode("pass"));
         //set address
-        address1.setStreetName("32 Test St.");
-        address1.setCountry("Canada");
-        address1.setCity("Toronto");
-        address1.setPostal("O3E 3J3");
-        user2.setAddress(address1);
+        user2.setStreetName("32 Test St.");
+        user2.setCountry("Canada");
+        user2.setCity("Toronto");
+        user2.setPostal("O3E 3J3");
         //set date of birth
-        dob2.setDay(28);
-        dob2.setMonth(10);
-        dob2.setYear(1995);
-        user2.setDob(dob2);
+        user2.setDay("28");
+        user2.setMonth("10");
+        user2.setYear("1995");
         user2.setEmail("admin@admin.com");
         user2.setAccountCreated(LocalDate.now());
         user2.setRole(Role.ADMIN);
         userRepo.save(user2);
 
         User user3 = new User();
-        Address address2 = new Address();
         Dob dob3 = new Dob();
         user3.setFirstName("Test");
         user3.setLastName("User");
         user3.setPassword(passwordEncoder.encode("pass"));
         //set address
-        address2.setStreetName("32 Test St.");
-        address2.setCountry("Canada");
-        address2.setCity("Toronto");
-        address2.setPostal("O3E 3J3");
-        user3.setAddress(address2);
+        user3.setStreetName("32 Test St.");
+        user3.setCountry("Canada");
+        user3.setCity("Toronto");
+        user3.setPostal("O3E 3J3");
         //set date of birth
-        dob3.setDay(28);
-        dob3.setMonth(10);
-        dob3.setYear(1995);
-        user3.setDob(dob3);
+        user3.setDay("28");
+        user3.setMonth("10");
+        user3.setYear("1995");
         user3.setEmail("client@client.com");
         user3.setAccountCreated(LocalDate.now());
         user3.setRole(Role.CLIENT);

@@ -9,9 +9,7 @@
 package ca.gbc.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -22,6 +20,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Email
+    @NotBlank(message = "Email cannot be empty")
     private String email;
     @Pattern(regexp="[A-Za-z]+$", message="First Name must contain letters")
     @NotNull(message = "First Name cannot be empty")
@@ -37,12 +36,23 @@ public class User {
     private LocalDate lastUpdate;
     private LocalDate accountCreated;
 
-    @Embedded
-    private Dob dob;
+    //DOB information
+    @NotBlank(message = "Day cannot be empty")
+    private String day;
+    @NotBlank(message = "Month cannot be empty")
+    private String month;
+    @NotBlank(message = "Year cannot be empty")
+    private String year;
 
-    @Embedded
-    private Address address;
-
+    //address information
+    @NotBlank(message = "Street cannot be empty")
+    private String streetName;
+    @Pattern(regexp = "^[A-Za-z]+$", message = "City can only contain letters")
+    private String city;
+    @Pattern(regexp = "[A-Za-z]+$", message = "Country can only contain letters")
+    private String country;
+    @NotBlank(message = "Postal cannot be empty")
+    private String postal;
     @Enumerated(value = EnumType.STRING)
     private Role role;
 
@@ -96,14 +106,6 @@ public class User {
         this.role = role;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
     public LocalDate getLastLogin() {
         return lastLogin;
     }
@@ -136,12 +138,60 @@ public class User {
         this.inbox = inbox;
     }
 
-    public Dob getDob() {
-        return dob;
+    public String getDay() {
+        return day;
     }
 
-    public void setDob(Dob dob) {
-        this.dob = dob;
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getPostal() {
+        return postal;
+    }
+
+    public void setPostal(String postal) {
+        this.postal = postal;
     }
 }
 

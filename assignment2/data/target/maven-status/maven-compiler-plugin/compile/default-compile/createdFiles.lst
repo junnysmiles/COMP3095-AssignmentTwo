@@ -1,0 +1,14 @@
+ca\gbc\model\CardType.class
+ca\gbc\services\UsersDetailsService.class
+ca\gbc\services\UserDetailsImpl.class
+ca\gbc\model\CreditCard.class
+ca\gbc\model\Admin.class
+ca\gbc\model\User.class
+ca\gbc\model\Client.class
+ca\gbc\model\Profile.class
+ca\gbc\model\Dob.class
+ca\gbc\model\Ticket.class
+ca\gbc\repositories\UserRepo.class
+ca\gbc\model\Role.class
+ca\gbc\model\Address.class
+ca\gbc\model\Inbox.class

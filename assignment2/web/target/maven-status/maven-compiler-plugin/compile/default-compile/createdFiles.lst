@@ -1,0 +1,10 @@
+ca\gbc\security\WebSecurityConfig.class
+ca\gbc\controller\RegistrationController.class
+ca\gbc\Assignment2Application.class
+ca\gbc\controller\IndexController.class
+ca\gbc\bootstrap\DataLoader.class
+ca\gbc\controller\AdminController.class
+ca\gbc\security\PasswordConfig.class
+ca\gbc\email\EmailConfig.class
+ca\gbc\controller\DashboardController.class
+ca\gbc\controller\ClientController.class
