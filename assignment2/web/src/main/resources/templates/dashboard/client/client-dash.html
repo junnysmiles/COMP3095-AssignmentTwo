@@ -12,16 +12,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">My Profile <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/dashboard/">Dashboard<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/dashboard/credit">Credit Profile</a>
+                <a class="nav-link" href="/dashboard/clientProfile">My Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/dashboard/futureExtension2">Inbox</a>
+                <a class="nav-link" href="/dashboard/clientCredit">Credit Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/dashboard/support">Support</a>
+                <a class="nav-link" href="/dashboard/clientInbox">Inbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/clientSupport">Support</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/logout">
@@ -74,13 +77,13 @@
             <div class="card">
                 <div class="card-body">
                     <h5>Preferred Billing Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.defaultBilling.streetName}">1 A Team Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.defaultBilling.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.defaultBilling.country}">United States</span></p>
+                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1 A Team Street</span></p>
+                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
+                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
                     <h5>Preferred Shipping Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.defaultShipping.streetName}">1, Venice, Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.defaultShipping.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.defaultShipping.country}">United States</span></p>
+                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1, Venice, Street</span></p>
+                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
+                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
                 </div>
             </div>
         </div>
