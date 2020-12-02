@@ -9,11 +9,15 @@
 package ca.gbc.model;
 
 import javax.persistence.Embeddable;
+import javax.validation.constraints.Pattern;
 
 @Embeddable
 public class Dob {
+    @Pattern(regexp = "^[0-9]*$", message = "Day must be a number")
     private Integer day;
+    @Pattern(regexp = "^[0-9]*$", message = "Month must be a number")
     private Integer month;
+    @Pattern(regexp = "^[0-9]*$", message = "Year must be a number")
     private Integer year;
 
     public Integer getDay() {
