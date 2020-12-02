@@ -35,55 +35,70 @@
 </nav>
 <!--CONTENT STARTS HERE-->
 <div class="container">
-    <h1>Dashboard</h1>
-    <div>Hello</div>
+    <h1>Credit Information Profile</h1>
     <div class="row">
-        <div class="card">
-            <div class="card-header">
-                Recent Activity
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Last Login Activity</h5>
-                <hr>
-                <p class="card-text" th:text="${user.lastLogin}">Sunday, November, 29, 2020</p>
-                <h5 class="card-title">Last User Profile Update</h5>
-                <hr>
-                <p class="card-text" th:text="${user.lastUpdate}">N/A</p>
-                <h5 class="card-title">Inbox</h5>
-                <hr>
-                <p class="card-text">Unread: <span>0</span></p>
-                <p class="card-text">Read: <span>0</span></p>
-            </div>
-        </div>
-        <div class="col-sm-6">
+        <div class="col">
             <div class="card">
                 <div class="card-header">
-                    Current Profile
+                    Add/Edit Card
                 </div>
                 <div class="card-body">
-                    <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}">Bosco</span></p>
-                    <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}">Baracus</span></p>
-                    <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}">mrT@ateam.com</span></p>
-                    <p><span style="font-weight: bold">D.O.B.:</span>
-                        <span th:text="${user.dob.day}"></span>
-                        <span th:text="${user.dob.month}"></span>
-                        <span th:text="${user.dob.year}"></span>
-                    </p>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1 A Team Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
+                    <form th:action="@{/registration}" th:object="${user}"   method="post" >
+                        <label>Credit Card Type</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Master Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">VISA</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">American Express</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="cardHolderName">Card Holder Name</label>
+                                <input type="text" class="form-control" id="cardHolderName" placeholder="John Doe">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="cardNumber">Credit Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Save as Default/Preferred method</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" name="add" value="add" class="btn btn-primary">Add</button>
+                        <button type="submit" name="update" value="update" class="btn btn-primary">Update</button>
+                    </form>
                 </div>
             </div>
+        </div>
+        <!--existing profiles-->
+        <div class="col">
             <div class="card">
+                <div class="card-header">
+                    Link Existing Cards
+                </div>
                 <div class="card-body">
-                    <h5>Preferred Billing Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1 A Team Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
-                    <h5>Preferred Shipping Address</h5>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.address.streetName}">1, Venice, Street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.address.city}">Los Angeles</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.address.country}">United States</span></p>
+                    <p style="font-weight: bold">Type: <span style="font-weight: normal">Mastercard</span></p>
+                    <p style="font-weight: bold">Expiry: <span style="font-weight: normal">04/2021</span></p>
+                    <p style="font-weight: bold">Card Holder: <span style="font-weight: normal">John A. Doe</span></p>
+                    <p style="font-weight: bold">Card Number: <span style="font-weight: normal">**** **** **** 1923</span></p>
+                    <p style="font-weight: bold">Default: <span style="font-weight: normal">Yes</span></p>
                 </div>
             </div>
         </div>
