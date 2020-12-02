@@ -31,7 +31,7 @@ public class DataLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) throws Exception {/*
         Admin user = new Admin();
         user.setFirstName("Nick");
         user.setLastName("Chinsen");
@@ -81,6 +81,6 @@ public class DataLoader implements CommandLineRunner {
         user3.setYear("1995");
         user3.setEmail("client@client.com");
         user3.setAccountCreated(LocalDate.now());
-        userRepo.save(user3);
+        userRepo.save(user3);*/
     }
 }

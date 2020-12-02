@@ -9,7 +9,27 @@
 </head>
 <body>
 <div class="container">
-    <h1>Registration</h1>
+    <!--Navigation starts here-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/login" style="font-weight:bold;">Stormchaser</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/registration">Register<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="/login">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+    <!--Content starts here-->
+    <h1>Register for Stormchaser</h1>
     <form th:action="@{/registration}" th:object="${user}"   method="post" >
         <div class="row">
             <div class="col">
