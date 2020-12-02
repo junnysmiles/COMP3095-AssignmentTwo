@@ -29,7 +29,6 @@ public class User {
     private String lastName;
     @Pattern(regexp="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,128}$",
     message = "Password must be between 6-12 chars and contain 1 uppercase letter and 1 special character")
-    @NotNull(message = "Password cannot be empty")
     private String password;
     private LocalDate lastLogin;
     private LocalDate lastUpdate;
