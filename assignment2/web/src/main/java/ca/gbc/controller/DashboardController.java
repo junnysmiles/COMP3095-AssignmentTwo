@@ -12,6 +12,7 @@ package ca.gbc.controller;
 
 import ca.gbc.model.Admin;
 import ca.gbc.model.User;
+import ca.gbc.repositories.ClientRepo;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -26,6 +27,12 @@ import java.time.LocalDate;
 @RequestMapping("/dashboard")
 public class DashboardController {
 
+    private final ClientRepo clientRepo;
+
+    public DashboardController(ClientRepo clientRepo) {
+        this.clientRepo = clientRepo;
+    }
+
     @Autowired
     UserRepo userRepo;
 
@@ -38,6 +45,8 @@ public class DashboardController {
         model.addAttribute("user", user);
         //redirect based on admin or client
         if(user instanceof Admin){
+            //add client list to model
+            model.addAttribute("clients", clientRepo.findAll());
             return "dashboard/admin/admin-dash";
         }
         return "dashboard/client/client-dash";
