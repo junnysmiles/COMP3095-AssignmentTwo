@@ -85,8 +85,11 @@
                     Registered Users List
                 </div>
                 <div class="card-body">
-                    <p>John Doe <span>john@isp.net</span></p>
-                    <p>Clark Kent <span>clark@isp.net</span></p>
+                    <tr th:each="client : ${clients}">
+                        <td th:text="${client.firstName}+' '+${client.lastName}"></td>
+                        <td th:text="${client.email}"></td>
+                        <br>
+                    </tr>
                 </div>
             </div>
         </div>
