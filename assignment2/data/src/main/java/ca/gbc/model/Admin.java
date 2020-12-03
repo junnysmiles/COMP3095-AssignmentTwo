@@ -9,7 +9,10 @@
 package ca.gbc.model;
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name = "Admin.findAllAdmins",
+        query = "select a from Admin a where a is not null")
 public class Admin extends User{
 }
