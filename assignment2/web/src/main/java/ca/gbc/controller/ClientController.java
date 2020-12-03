@@ -9,13 +9,17 @@
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 
+import ca.gbc.model.CreditCard;
 import ca.gbc.model.User;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 public class ClientController {
@@ -31,7 +35,7 @@ public class ClientController {
     }
 
     @RequestMapping("/dashboard/clientCredit")
-    public String clientCredit(Model model, Authentication authentication) {
+    public String clientCredit(Model model, Authentication authentication, @Valid @ModelAttribute("creditcard") CreditCard creditCard) {
         User user = userRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
         return "dashboard/client/credit";
