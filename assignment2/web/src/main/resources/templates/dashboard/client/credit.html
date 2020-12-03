@@ -43,20 +43,20 @@
                     Add/Edit Card
                 </div>
                 <div class="card-body">
-                    <form th:action="@{/dashboard/credit}" th:object="${user}"   method="post" >
+                    <form th:action="@{/dashboard/credit}" th:object="${card}"   method="post" >
                         <label>Credit Card Type</label>
                         <div class="row">
                             <div class="col">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" th:value="${T(ca.gbc.model.CardType).MASTERCARD}">
                                     <label class="form-check-label" for="inlineRadio1">Master Card</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" th:value="${T(ca.gbc.model.CardType).VISA}">
                                     <label class="form-check-label" for="inlineRadio2">VISA</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" th:value="${T(ca.gbc.model.CardType).AMERICANEXPRESS}">
                                     <label class="form-check-label" for="inlineRadio3">American Express</label>
                                 </div>
                             </div>
@@ -64,13 +64,27 @@
                         <div class="row">
                             <div class="col">
                                 <label for="cardHolderName">Card Holder Name</label>
-                                <input type="text" class="form-control" id="cardHolderName" placeholder="John Doe">
+                                <input type="text" class="form-control" id="cardHolderName" placeholder="John Doe"
+                                       th:field="*{cardholderName}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="cardNumber">Credit Card Number</label>
-                                <input type="text" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
+                                <input type="text" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx"
+                                       th:field="*{CCNumber}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="expMonth">Exp. Month</label>
+                                <input type="text" class="form-control" id="expMonth" placeholder="12"
+                                       th:field="*{expirationMonth}">
+                            </div>
+                            <div class="col">
+                                <label for="expYear">Exp. Year</label>
+                                <input type="text" class="form-control" id="expYear" placeholder="2025"
+                                       th:field="*{expirationYear}">
                             </div>
                         </div>
                         <div class="row">

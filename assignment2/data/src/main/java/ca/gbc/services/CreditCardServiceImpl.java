@@ -30,6 +30,9 @@ public class CreditCardServiceImpl implements CreditCardService{
         return creditCards;
     }
 
+    public CreditCard findCCByNumber(Long aLong) {
+        return creditCardRepo.findCCByNumber(aLong);
+    }
     @Override
     public CreditCard findById(Long aLong) {
         return creditCardRepo.findById(aLong).orElse(null);

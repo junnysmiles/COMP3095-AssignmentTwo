@@ -25,4 +25,36 @@ public class Client extends User{
     private Address defaultShipping;
     @OneToOne
     private Address defaultBilling;
+
+    public Set<CreditCard> getCreditCards() {
+        return creditCards;
+    }
+
+    public void setCreditCards(Set<CreditCard> creditCards) {
+        this.creditCards = creditCards;
+    }
+
+    public Set<Profile> getProfiles() {
+        return profiles;
+    }
+
+    public void setProfiles(Set<Profile> profiles) {
+        this.profiles = profiles;
+    }
+
+    public Address getDefaultShipping() {
+        return defaultShipping;
+    }
+
+    public void setDefaultShipping(Address defaultShipping) {
+        this.defaultShipping = defaultShipping;
+    }
+
+    public Address getDefaultBilling() {
+        return defaultBilling;
+    }
+
+    public void setDefaultBilling(Address defaultBilling) {
+        this.defaultBilling = defaultBilling;
+    }
 }

@@ -5,6 +5,7 @@
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
  * Date: 25/11/2020 -Nick Created file
  *       01/12/2020 -Nick Updated request mappings
+ *       03/12/2020 -Nick Added functionalities for various mappings
  * Description: Controller for admins that successfully login
  * ****************************************************************************************************************/
 package ca.gbc.controller;
