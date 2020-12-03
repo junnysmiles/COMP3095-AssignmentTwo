@@ -8,13 +8,14 @@
  * ****************************************************************************************************************/
 package ca.gbc.model;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import org.springframework.data.jpa.repository.Query;
+
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@NamedQuery(name = "Client.findAllClients",
+  query = "select c from User c where c is not null")
 public class Client extends User{
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "client")
     private Set<CreditCard> creditCards;

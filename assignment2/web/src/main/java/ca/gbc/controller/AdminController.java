@@ -12,13 +12,12 @@ package ca.gbc.controller;
 import ca.gbc.model.Admin;
 import ca.gbc.model.Client;
 import ca.gbc.model.User;
-import ca.gbc.repositories.AdminRepo;
+import ca.gbc.repositories.ClientRepo;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,6 +28,8 @@ import javax.validation.Valid;
 public class AdminController {
     @Autowired
     UserRepo userRepo;
+    @Autowired
+    ClientRepo clientRepo;
 
     @RequestMapping("/dashboard/adminProfile")
     public String adminProfile(Model model, Authentication authentication) {
@@ -37,6 +38,7 @@ public class AdminController {
         return "dashboard/admin/profile";
     }
 
+    //updates admin
     @RequestMapping(value = "/dashboard/adminProfile", method = RequestMethod.POST)
     public String adminProfileUpdate(Model model, @Valid @ModelAttribute("user") Admin admin, Authentication authentication) {
         User updateAdmin = userRepo.findByEmail(authentication.getName());
@@ -52,15 +54,17 @@ public class AdminController {
         updateAdmin.setCountry(admin.getCountry());
         updateAdmin.setPostal(admin.getPostal());
         System.out.println(updateAdmin.getFirstName());
-        System.out.println("It's hitting");
         userRepo.save(updateAdmin);
         return "dashboard/admin/admin-dash";
 
     }
 
+    //shows a list of Clients and allows for deletion
     @RequestMapping("/dashboard/adminUsers")
-    public String adminUsers(Model model, Admin admin) {
+    public String listUsers(Model model, Admin admin) {
+        model.addAttribute("clients", clientRepo.findAll());
         model.addAttribute("user", admin);
+        System.out.println(model);
         return "dashboard/admin/users";
     }
 

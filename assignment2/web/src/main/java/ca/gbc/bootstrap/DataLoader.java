@@ -7,6 +7,7 @@
  *       02/12/2020 -Nick added user details for testing
  * Description: Loads default admin as per reqs, also test admin/client details are
  *              admin@admin.com pass        client@client.com pass
+ *              Run once on initial startup the comment out run code
  * ****************************************************************************************************************/
 package ca.gbc.bootstrap;
 

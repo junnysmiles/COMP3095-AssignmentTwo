@@ -56,27 +56,16 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr th:each="client : ${clients}">
                             <td>
                                 <input type="checkbox" class="form-check-input" id="check1">
                             </td>
-                            <td>Doe</td>
-                            <td>John</td>
+                            <td th:text="${client.lastName}">Doe</td>
+                            <td th:text="${client.firstName}">John</td>
                             <td>CLIENT</td>
-                            <td>jdoe@isp.com</td>
-                            <td>123 A Street Toronto Canada</td>
-                            <td>Monday March 3 2018 7:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="form-check-input" id="check2">
-                            </td>
-                            <td>Doe</td>
-                            <td>John</td>
-                            <td>CLIENT</td>
-                            <td>jdoe@isp.com</td>
-                            <td>123 A Street Toronto Canada</td>
-                            <td>Monday March 3 2018 7:00 PM</td>
+                            <td th:text="${client.email}">jdoe@isp.com</td>
+                            <td th:text="${client.streetName} + ' ' + ${client.city} + ' ' + ${client.country}">123 A Street Toronto Canada</td>
+                            <td th:text="${client.accountCreated}">Monday March 3 2018 7:00 PM</td>
                         </tr>
                         </tbody>
                     </table>
