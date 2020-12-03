@@ -12,6 +12,7 @@ package ca.gbc.controller;
 import ca.gbc.model.Admin;
 import ca.gbc.model.Client;
 import ca.gbc.model.User;
+import ca.gbc.repositories.AdminRepo;
 import ca.gbc.repositories.ClientRepo;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,8 @@ public class AdminController {
     UserRepo userRepo;
     @Autowired
     ClientRepo clientRepo;
+    @Autowired
+    AdminRepo adminRepo;
 
     @RequestMapping("/dashboard/adminProfile")
     public String adminProfile(Model model, Authentication authentication) {
@@ -76,6 +79,7 @@ public class AdminController {
 
     @RequestMapping("/dashboard/adminSupport")
     public String adminSupport(Model model, Admin admin) {
+        model.addAttribute("admins", adminRepo.findAll());
         model.addAttribute("user", admin);
         return "dashboard/admin/support";
     }

@@ -118,31 +118,18 @@
         </div>
         <div class="col-md-4">
             <div class="row">
-                <div class="card">
+                <div class="card" th:each="admin: ${admins}">
                     <div class="card-header">
                         Admin User Listings
                     </div>
                     <div class="card-body">
-                        <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}"></span></p>
-                        <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}"></span></p>
-                        <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}"></span></p>
-                        <p style="font-weight: bold">D.O.B.: <span style="font-weight: normal" th:text="${user.day} + '/'+${user.month}+'/'+${user.year}"></span></p>
-                        <p style="font-weight: bold">Street Address: <span style="font-weight: normal" th:text="${user.streetName}"></span></p>
-                        <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.city}"></span></p>
-                        <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.country}"></span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${user.firstName}"></span></p>
-                        <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${user.lastName}"></span></p>
-                        <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.email}"></span></p>
-                        <p style="font-weight: bold">D.O.B.: <span style="font-weight: normal" th:text="${user.day} + '/'+${user.month}+'/'+${user.year}"></span></p>
-                        <p style="font-weight: bold">Street Address: <span style="font-weight: normal" th:text="${user.streetName}"></span></p>
-                        <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.city}"></span></p>
-                        <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.country}"></span></p>
+                        <p style="font-weight: bold">First Name: <span style="font-weight: normal" th:text="${admin.firstName}"></span></p>
+                        <p style="font-weight: bold">Last Name: <span style="font-weight: normal" th:text="${admin.lastName}"></span></p>
+                        <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${admin.email}"></span></p>
+                        <p style="font-weight: bold">D.O.B.: <span style="font-weight: normal" th:text="${admin.day} + '/'+${admin.month}+'/'+${admin.year}"></span></p>
+                        <p style="font-weight: bold">Street Address: <span style="font-weight: normal" th:text="${admin.streetName}"></span></p>
+                        <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${admin.city}"></span></p>
+                        <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${admin.country}"></span></p>
                     </div>
                 </div>
             </div>
