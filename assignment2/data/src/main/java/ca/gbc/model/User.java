@@ -55,8 +55,8 @@ public class User {
     @NotBlank(message = "Postal cannot be empty")
     private String postal;
 
-    @OneToOne
-    private Inbox inbox;
+    @ManyToMany
+    private Set<Ticket> tickets;
 
     public Long getId() {
         return id;
@@ -122,12 +122,12 @@ public class User {
         this.accountCreated = accountCreated;
     }
 
-    public Inbox getInbox() {
-        return inbox;
+    public Set<Ticket> getTickets() {
+        return tickets;
     }
 
-    public void setInbox(Inbox inbox) {
-        this.inbox = inbox;
+    public void setTickets(Set<Ticket> tickets) {
+        this.tickets = tickets;
     }
 
     public String getDay() {

@@ -27,9 +27,10 @@ public class Ticket {
     @NotBlank(message = "Message cannot be blank")
     private String message;
     private LocalDate timeStamp;
+    private Boolean read;
 
     @ManyToMany
-    private Set<Inbox> inbox;
+    private Set<User> users;
 
     public Long getId() {
         return id;
@@ -79,12 +80,20 @@ public class Ticket {
         this.ticketNumber = ticketNumber;
     }
 
-    public Set<Inbox> getInbox() {
-        return inbox;
+    public Boolean getRead() {
+        return read;
     }
 
-    public void setInbox(Set<Inbox> inbox) {
-        this.inbox = inbox;
+    public void setRead(Boolean read) {
+        this.read = read;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
     }
 
     public String getMessage() {

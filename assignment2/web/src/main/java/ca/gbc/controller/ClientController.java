@@ -12,17 +12,18 @@ package ca.gbc.controller;
 import ca.gbc.model.*;
 import ca.gbc.repositories.ClientRepo;
 import ca.gbc.repositories.CreditCardRepo;
+import ca.gbc.repositories.TicketRepo;
 import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
 
 @Controller
 public class ClientController {
@@ -33,6 +34,8 @@ public class ClientController {
     CreditCardRepo cardRepo;
     @Autowired
     ClientRepo clientRepo;
+    @Autowired
+    TicketRepo ticketRepo;
 
     @RequestMapping("/dashboard/clientProfile")
     public String clientProfile(Model model, Authentication authentication) {
@@ -95,16 +98,23 @@ public class ClientController {
         return "dashboard/client/support";
     }
 
+    //mapping for when a client sends a support ticket
     @RequestMapping(value = "/dashboard/clientSupport", method = RequestMethod.POST)
     public String sendSupport(Model model, Authentication authentication, @Valid Ticket ticket, BindingResult bindingResult) {
         User user = userRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
         if(bindingResult.hasErrors()){
             System.out.println("BINDING RESULT ERROR");
             return "dashboard/client/support";
         } else {
-
+            ticket.setEmail(user.getEmail());
+            String name = user.getFirstName() + ' ' + user.getLastName();
+            ticket.setFirstName(name);
+            ticket.setTimeStamp(LocalDate.now());
+            ticketRepo.save(ticket);
+            //reset ticket model
+            model.addAttribute("ticket", new Ticket());
+            return "dashboard/client/support";
         }
-        model.addAttribute("user", user);
-        return "dashboard/client/support";
     }
 }
