@@ -21,14 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CreditCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/CreditCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/credit.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/credit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/credit.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/credit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/demo.mv.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +137,7 @@
       <workItem from="1606843283239" duration="34389000" />
       <workItem from="1606914236819" duration="1218000" />
       <workItem from="1607007137723" duration="7049000" />
-      <workItem from="1607015159526" duration="16302000" />
+      <workItem from="1607015159526" duration="18030000" />
     </task>
     <servers />
   </component>
@@ -213,10 +210,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1671" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607012206178" />
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1607050937386">
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1607053771650">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607050937386" />
+    <state x="1725" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607053771650" />
     <state x="1458" y="628" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604812734104">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

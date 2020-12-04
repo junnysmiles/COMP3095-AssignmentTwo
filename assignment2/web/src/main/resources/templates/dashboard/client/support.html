@@ -43,7 +43,7 @@
                     Add/Edit Card
                 </div>
                 <div class="card-body">
-                    <form th:action="@{/dashboard/client/clientSupport}" th:object="${user}"   method="post" >
+                    <form th:action="@{/dashboard/client/clientSupport}" th:object="${ticket}"   method="post" >
                         <label>Support Ticket</label>
                         <div class="row">
                             <div class="col">
@@ -63,7 +63,9 @@
                             <div class="col">
                                 <label for="subject" class="col-form-label">Subject</label>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="subject">
+                                    <input type="text" class="form-control" id="subject" th:field="*{subject}">
+                                    <div class="text text-danger" th:if="${#fields.hasErrors('subject')}"
+                                         th:errors="*{subject}"></div>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +73,9 @@
                             <div class="col">
                                 <label for="message" class="col-form-label">Message</label>
                                 <div class="col">
-                                    <textarea class="form-control" id="message"></textarea>
+                                    <textarea class="form-control" id="message" th:field="*{message}"></textarea>
+                                    <div class="text text-danger" th:if="${#fields.hasErrors('message')}"
+                                         th:errors="*{message}"></div>
                                 </div>
                             </div>
                         </div>

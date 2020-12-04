@@ -9,6 +9,7 @@
 package ca.gbc.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -21,7 +22,10 @@ public class Ticket {
     private Long ticketNumber;
     private String firstName;
     private String email;
+    @NotBlank(message = "Subject cannot be blank")
     private String subject;
+    @NotBlank(message = "Message cannot be blank")
+    private String message;
     private LocalDate timeStamp;
 
     @ManyToMany
@@ -81,5 +85,13 @@ public class Ticket {
 
     public void setInbox(Set<Inbox> inbox) {
         this.inbox = inbox;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

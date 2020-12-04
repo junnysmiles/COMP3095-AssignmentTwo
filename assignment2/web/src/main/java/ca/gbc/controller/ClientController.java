@@ -9,10 +9,7 @@
  * ****************************************************************************************************************/
 package ca.gbc.controller;
 
-import ca.gbc.model.CardType;
-import ca.gbc.model.Client;
-import ca.gbc.model.CreditCard;
-import ca.gbc.model.User;
+import ca.gbc.model.*;
 import ca.gbc.repositories.ClientRepo;
 import ca.gbc.repositories.CreditCardRepo;
 import ca.gbc.repositories.UserRepo;
@@ -93,6 +90,20 @@ public class ClientController {
     @RequestMapping("/dashboard/clientSupport")
     public String clientSupport(Model model, Authentication authentication) {
         User user = userRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        model.addAttribute("ticket", new Ticket());
+        return "dashboard/client/support";
+    }
+
+    @RequestMapping(value = "/dashboard/clientSupport", method = RequestMethod.POST)
+    public String sendSupport(Model model, Authentication authentication, @Valid Ticket ticket, BindingResult bindingResult) {
+        User user = userRepo.findByEmail(authentication.getName());
+        if(bindingResult.hasErrors()){
+            System.out.println("BINDING RESULT ERROR");
+            return "dashboard/client/support";
+        } else {
+
+        }
         model.addAttribute("user", user);
         return "dashboard/client/support";
     }
