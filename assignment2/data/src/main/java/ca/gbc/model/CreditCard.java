@@ -9,6 +9,7 @@
 package ca.gbc.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 public class CreditCard {
@@ -19,9 +20,20 @@ public class CreditCard {
     @Enumerated(value = EnumType.STRING)
     private CardType cardType;
 
+    @NotNull(message = "The Expiration month cannot be null")
+    @Max(value = 12, message = "Expiration Month can't be higher than 12")
+    @Min(value = 1, message = "Expiration Month can't be lower than 1")
     private Integer expirationMonth;
+
+    @Max(value = 2030, message = "Expiration year must be less than 2030")
+    @Min(value = 2020, message = "Expiration year can't be in the past")
+    @NotNull(message = "The Expiration year cannot be null")
     private Integer expirationYear;
+
+    @NotNull(message = "The Cardholder name cannot be null")
     private String cardholderName;
+
+    @NotNull(message = "The Card Number cannot be null")
     private Long CCNumber;
     private Boolean defaultCC;
 

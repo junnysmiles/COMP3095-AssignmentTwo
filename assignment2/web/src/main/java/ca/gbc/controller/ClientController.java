@@ -53,16 +53,16 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/dashboard/clientCredit", method = RequestMethod.POST)
-    public String addCreditCard(Model model, Authentication authentication, @Valid @ModelAttribute("creditcard") CreditCard creditCard,BindingResult bindingResult) {
+    public String addCreditCard(Model model, Authentication authentication, @Valid CreditCard creditCard,BindingResult bindingResult) {
+        //check if card exists
         Client user = clientRepo.findByEmail(authentication.getName());
-        model.addAttribute("card", creditCard);
         model.addAttribute("user", user);
+        model.addAttribute("card", creditCard);
         //reroute back to registration if any errors
         if(bindingResult.hasErrors()) {
             System.out.println("BINDING RESULT ERROR");
-            return "dashboard/clientCredit";
+            return "dashboard/client/credit";
         } else { //create new client
-            //check if card exists
             CreditCard creditCard1 = cardRepo.findCCByNumber(creditCard.getCCNumber());
             if(creditCard1 == null) {
                 cardRepo.save(creditCard);
@@ -73,7 +73,7 @@ public class ClientController {
                 creditCard1.setDefaultCC(true);
                 creditCard1.setExpirationMonth(creditCard.getExpirationMonth());
                 creditCard1.setExpirationYear(creditCard.getExpirationMonth());
-                creditCard1.setCardType(CardType.MASTERCARD);
+                creditCard1.setCardType(creditCard.getCardType());
                 cardRepo.save(creditCard1);
             }
         }
