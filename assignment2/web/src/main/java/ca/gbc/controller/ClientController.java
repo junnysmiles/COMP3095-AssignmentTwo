@@ -49,22 +49,22 @@ public class ClientController {
         Client user = clientRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
         model.addAttribute("card", new CreditCard());
+        model.addAttribute("cards", cardRepo.findAll());
         return "dashboard/client/credit";
     }
 
     @RequestMapping(value = "/dashboard/clientCredit", method = RequestMethod.POST)
     public String addCreditCard(Model model, Authentication authentication, @Valid CreditCard creditCard,BindingResult bindingResult) {
-        //check if card exists
         Client user = clientRepo.findByEmail(authentication.getName());
-        model.addAttribute("user", user);
-        model.addAttribute("card", creditCard);
         //reroute back to registration if any errors
         if(bindingResult.hasErrors()) {
             System.out.println("BINDING RESULT ERROR");
-            return "dashboard/client/credit";
         } else { //create new client
+            //check if card exists
+
             CreditCard creditCard1 = cardRepo.findCCByNumber(creditCard.getCCNumber());
             if(creditCard1 == null) {
+                creditCard.setClient(user);
                 cardRepo.save(creditCard);
             }else {//card exists so update values
                 creditCard1.setCardholderName(creditCard.getCardholderName());
@@ -77,6 +77,9 @@ public class ClientController {
                 cardRepo.save(creditCard1);
             }
         }
+        model.addAttribute("card", creditCard);
+        model.addAttribute("cards", cardRepo.findAll());
+        model.addAttribute("user", user);
         return "dashboard/client/credit";
     }
 

@@ -112,14 +112,17 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    Link Existing Cards
+                    Credit Cards
                 </div>
                 <div class="card-body">
-                    <p style="font-weight: bold">Type: <span style="font-weight: normal">Mastercard</span></p>
-                    <p style="font-weight: bold">Expiry: <span style="font-weight: normal">04/2021</span></p>
-                    <p style="font-weight: bold">Card Holder: <span style="font-weight: normal">John A. Doe</span></p>
-                    <p style="font-weight: bold">Card Number: <span style="font-weight: normal">**** **** **** 1923</span></p>
-                    <p style="font-weight: bold">Default: <span style="font-weight: normal">Yes</span></p>
+                    <tr th:each="card : ${cards}">
+                        <td th:text="'Type: ' + ${card.cardType}"></td>
+                        <td th:text="'Expiry: ' + ${card.expirationMonth}+'/'+${card.expirationYear}"></td>
+                        <td th:text="'Card Holder: ' + ${card.cardholderName}"></td>
+                        <td th:text="'Card Number: ' + ${card.CCNumber}"></td>
+                        <td th:text="'Default: ' + ${card.defaultCC}"></td>
+                        <br>
+                    </tr>
                 </div>
             </div>
         </div>

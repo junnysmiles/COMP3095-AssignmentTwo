@@ -17,8 +17,7 @@ public class CreditCard {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    @Enumerated(value = EnumType.STRING)
-    private CardType cardType;
+    private String cardType;
 
     @NotNull(message = "The Expiration month cannot be null")
     @Max(value = 12, message = "Expiration Month can't be higher than 12")
@@ -48,11 +47,11 @@ public class CreditCard {
         this.id = id;
     }
 
-    public CardType getCardType() {
+    public String getCardType() {
         return cardType;
     }
 
-    public void setCardType(CardType cardType) {
+    public void setCardType(String cardType) {
         this.cardType = cardType;
     }
 
