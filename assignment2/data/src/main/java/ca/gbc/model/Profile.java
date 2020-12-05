@@ -15,6 +15,10 @@ import javax.persistence.ManyToOne;
 public class Profile extends User{
     @ManyToOne
     private Client client;
+    private String profileEmail;
+    private String profileAddress;
+    private String profileCity;
+    private String profileCountry;
     private Boolean defaultBilling;
     private Boolean defaultShipping;
 }

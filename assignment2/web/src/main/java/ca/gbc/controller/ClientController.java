@@ -5,6 +5,8 @@
  * Student Number: 101075596, 101165088, 101197834, 101208175, 101210892
  * Date: 28/11/2020 -Nick Created file
  *       30/11/2020 -Nick Updated request mappings
+ *       02/12/2020 -Nick Modified credit profile mappings
+ *       05/12/2020 -Nick Modified profile addition mapping
  * Description: Controller for Clients after they successfully login
  * ****************************************************************************************************************/
 package ca.gbc.controller;
@@ -44,6 +46,31 @@ public class ClientController {
         return "dashboard/client/profile";
     }
 
+    @RequestMapping(value = "/dashboard/clientProfileAdd", params = "action=add")
+    public String clientProfileAdd(Model model, Authentication authentication, @Valid Profile profile, BindingResult bindingResult) {
+        User user = userRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        if(bindingResult.hasErrors()){
+            System.out.println("BINDING ERROR");
+            return "dashboard/client/profile";
+        } else {
+        }
+        return "dashboard/client/profile";
+    }
+
+    @RequestMapping(value = "/dashboard/clientProfileAdd", params = "action=update")
+    public String clientProfileUpdate(Model model, Authentication authentication, @Valid Profile profile, BindingResult bindingResult) {
+        User user = userRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        if(bindingResult.hasErrors()){
+            System.out.println("BINDING ERROR");
+            return "dashboard/client/profile";
+        } else {
+
+        }
+        return "dashboard/client/profile";
+    }
+    //mapping for credit profile page
     @RequestMapping("/dashboard/clientCredit")
     public String clientCredit(Model model, Authentication authentication) {
         Client user = clientRepo.findByEmail(authentication.getName());

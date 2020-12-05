@@ -43,7 +43,7 @@
                 Add/Edit Profile
             </div>
             <div class="card-body">
-                <form th:action="@{/registration}" th:object="${user}"   method="post" >
+                <form th:action="@{/dashboard/clientProfileAdd}" th:object="${user}"   method="post" >
                     <div class="row">
                         <div class="col">
                             <label for="firstName">First Name*</label>
@@ -111,8 +111,8 @@
                                    th:field="*{postal}">
                         </div>
                     </div>
-                    <button type="submit" name="add" value="add" class="btn btn-primary">Add</button>
-                    <button type="submit" name="update" value="update" class="btn btn-primary">Update</button>
+                    <button type="submit" name="action" value="add" class="btn btn-primary">Add Profile</button>
+                    <button type="submit" name="action" value="update" class="btn btn-primary">Update Profile</button>
                 </form>
             </div>
         </div>
