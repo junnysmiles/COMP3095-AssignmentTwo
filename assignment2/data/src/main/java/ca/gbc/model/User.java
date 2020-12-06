@@ -56,7 +56,7 @@ public class User {
     @NotBlank(message = "Postal cannot be empty")
     private String postal;
 
-    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Ticket> tickets;
 
     public Long getId() {

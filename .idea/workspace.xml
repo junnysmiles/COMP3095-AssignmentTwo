@@ -20,18 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99288e5f-43e9-42ca-9493-2f09db7d6a1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/ticket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/ticket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/repositories/TicketRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/repositories/TicketRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/src/main/java/ca/gbc/services/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/services/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/data/target/classes/ca/gbc/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/java/ca/gbc/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/admin/inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/src/main/resources/templates/dashboard/client/ticket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/bootstrap/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/ca/gbc/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/admin/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/admin/inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/web/target/classes/templates/dashboard/client/ticket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/demo.mv.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +148,7 @@
       <workItem from="1607007137723" duration="7049000" />
       <workItem from="1607015159526" duration="19967000" />
       <workItem from="1607203554244" duration="27578000" />
-      <workItem from="1607269628103" duration="4602000" />
+      <workItem from="1607269628103" duration="9914000" />
     </task>
     <servers />
   </component>
@@ -247,45 +249,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1350" y="518" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607041529647" />
-    <state width="1295" height="362" key="GridCell.Tab.0.bottom" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.0.bottom" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1295" height="362" key="GridCell.Tab.0.center" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.0.center" timestamp="1607280235701">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235701" />
     <state width="1234" height="410" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1295" height="362" key="GridCell.Tab.0.left" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.0.left" timestamp="1607280235701">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235701" />
     <state width="1234" height="410" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1295" height="362" key="GridCell.Tab.0.right" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.0.right" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330100" />
-    <state width="1295" height="362" key="GridCell.Tab.1.bottom" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.1.bottom" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1295" height="362" key="GridCell.Tab.1.center" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.1.center" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1295" height="362" key="GridCell.Tab.1.left" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.1.left" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
-    <state width="1295" height="362" key="GridCell.Tab.1.right" timestamp="1607274974374">
+    <state width="1375" height="347" key="GridCell.Tab.1.right" timestamp="1607280235702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1295" height="362" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607274974374" />
+    <state width="1375" height="347" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607280235702" />
     <state width="1234" height="410" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.349.1920.1080@0.0.2560.1440" timestamp="1606543330101" />
     <state width="1406" height="491" key="GridCell.Tab.2.bottom" timestamp="1607217787395">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -334,9 +336,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1606805145571" />
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1607271980001">
+    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1607279063770">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607271980001" />
+    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1607279063770" />
   </component>
 </project>

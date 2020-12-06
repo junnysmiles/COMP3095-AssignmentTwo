@@ -36,49 +36,33 @@
 <!--CONTENT STARTS HERE-->
 <div class="container">
     <h1>Inbox</h1>
-    <form>
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <th scope="col">Select</th>
-                <th scope="col">Ticket #</th>
-                <th scope="col">Username</th>
-                <th scope="col">Date Added</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><input type="checkbox" class="form-check-input" id="check1"></td>
-                <td>1241</td>
-                <td>j_doe@real.com</td>
-                <td>March 10 2020 4:12PM</td>
-                <td>Issues with the system</td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="options">
-                        <button type="button" class="btn btn-secondary">Read</button>
-                        <button type="button" class="btn btn-secondary">Remove</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" class="form-check-input" id="check1"></td>
-                <td>1241</td>
-                <td>j_doe@real.com</td>
-                <td>March 10 2020 4:12PM</td>
-                <td>Issues with the system</td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="options">
-                        <button type="button" class="btn btn-secondary">Read</button>
-                        <button type="button" class="btn btn-secondary">Remove</button>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <button type="submit" name="delete" value="delete" class="btn btn-primary">Bulk Delete</button>
-    </form>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Select</th>
+            <th scope="col">Ticket</th>
+            <th scope="col">Date Added</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ticket : ${tickets}">
+            <th scope="row">[ ]</th>
+            <td th:text="${ticket.ticketNumber}">1241</td>
+            <td th:text="${ticket.timeStamp}"></td>
+            <td th:text="${ticket.subject}">Help my PC wont turn on</td>
+            <td>
+                <form th:method="read" th:action="@{/dashboard/adminInboxRead/{id}(id=${ticket.ticketNumber})}">
+                    <input type="submit" value="read" class="btn btn-primary"/>
+                </form>
+                <form th:method="delete" th:action="@{/dashboard/deleteAdminTicket/{id}(id=${ticket.ticketNumber})}">
+                    <input type="submit" value="delete" class="btn btn-primary"/>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

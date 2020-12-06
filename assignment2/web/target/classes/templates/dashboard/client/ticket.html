@@ -44,6 +44,10 @@
                 </div>
                 <div class="card-body">
                     <tr th:each="ticket : ${tickets}">
+                        <div class="card-title">
+                            <h6>Ticket Reply</h6>
+                        </div>
+                        <p th:text="'Name: ' + ${ticket.firstName}"></p>
                         <p th:text="'Ticket Number: ' + ${ticket.ticketNumber}"></p>
                         <p th:text="'Date Added: ' + ${ticket.timeStamp}"></p>
                         <p th:text="'Subject: ' + ${ticket.subject}"></p>

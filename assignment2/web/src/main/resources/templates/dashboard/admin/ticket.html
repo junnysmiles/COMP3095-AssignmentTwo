@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Inbox</title>
+    <!-- CSS only -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+<!--Navigation starts here-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/adminProfile">My Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/adminUsers">Users</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/dashboard/adminInbox">Inbox <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/adminSupport">Support</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/logout">
+            Welcome: <span th:text="${user.firstName}"></span>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+        </form>
+    </div>
+</nav>
+<!--CONTENT STARTS HERE-->
+<div class="container">
+    <h1>Inbox</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Support Ticket
+                </div>
+                <div class="card-body">
+                    <tr th:each="ticket : ${tickets}">
+                        <p th:text="'Name: ' + ${ticket.firstName}"></p>
+                        <p th:text="'Ticket Number: ' + ${ticket.ticketNumber}"></p>
+                        <p th:text="'Date Added: ' + ${ticket.timeStamp}"></p>
+                        <p th:text="'Subject: ' + ${ticket.subject}"></p>
+                        <p th:text="'Message: ' + ${ticket.message}"></p>
+                    </tr>
+                    <form th:method="inbox" th:action="@{/dashboard/clientInbox}">
+                        <input type="submit" value="inbox" class="btn btn-primary"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Reply to Ticket
+                </div>
+                <div class="card-body">
+                    <form th:action="@{/dashboard/adminInboxReply/{id}(id=${ticket.ticketNumber})}" th:object="${ticket}"   method="post" >
+                        <label>Support Ticket</label>
+                        <div class="row">
+                            <div class="col">
+                                <label for="name" class="col-sm-3 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="name" th:placeholder="${user.firstName}+' '+${user.lastName}" disabled>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="email" th:placeholder="${user.email}" disabled>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="col-sm-2 col-form-label">Ticket Number</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="ticketNumber" th:field="*{ticketNumber}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="subject" class="col-form-label">Subject</label>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="subject" th:field="*{subject}">
+                                    <div class="text text-danger" th:if="${#fields.hasErrors('subject')}"
+                                         th:errors="*{subject}"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="message" class="col-form-label">Message</label>
+                                <div class="col">
+                                    <textarea class="form-control" id="message" th:field="*{message}"></textarea>
+                                    <div class="text text-danger" th:if="${#fields.hasErrors('message')}"
+                                         th:errors="*{message}"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" name="send" value="send" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

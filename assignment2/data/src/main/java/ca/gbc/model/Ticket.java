@@ -30,7 +30,7 @@ public class Ticket {
     private LocalDateTime timeStamp;
     private Boolean read = false;
 
-    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<User> users;
 
     public Long getId() {
