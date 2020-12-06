@@ -92,6 +92,17 @@ public class ClientController {
         return "dashboard/client/profile";
     }
 
+    //delete credit card
+    @RequestMapping("/dashboard/deleteCard/{id}")
+    public String deleteCredit(@PathVariable("id") Long id, Model model, Authentication authentication){
+        cardRepo.deleteById(id);
+        Client user = clientRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        model.addAttribute("profile", new Profile());
+        model.addAttribute("profiles", profileRepo.findAll());
+        return "dashboard/client/credit";
+    }
+
     //mapping for credit profile page
     @RequestMapping("/dashboard/clientCredit")
     public String clientCredit(Model model, Authentication authentication) {

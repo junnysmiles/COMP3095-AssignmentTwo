@@ -116,11 +116,16 @@
                 </div>
                 <div class="card-body">
                     <tr th:each="card : ${cards}">
-                        <td th:text="'Type: ' + ${card.cardType}"></td>
-                        <td th:text="'Expiry: ' + ${card.expirationMonth}+'/'+${card.expirationYear}"></td>
-                        <td th:text="'Card Holder: ' + ${card.cardholderName}"></td>
-                        <td th:text="'Card Number: ' + ${card.CCNumber}"></td>
-                        <td th:text="'Default: ' + ${card.defaultCC}"></td>
+                        <p th:text="'Type: ' + ${card.cardType}"></p>
+                        <p th:text="'Expiry: ' + ${card.expirationMonth}+'/'+${card.expirationYear}"></p>
+                        <p th:text="'Card Holder: ' + ${card.cardholderName}"></p>
+                        <p th:text="'Card Number: ' + ${card.CCNumber}"></p>
+                        <p th:text="'Default: ' + ${card.defaultCC}"></p>
+                        <form th:method="update" th:action="@{/dashboard/creditProfile/(card=${card.id})}">
+                            <input type="submit" value="update" class="btn btn-primary"/>
+                        </form>
+                        <a class="btn" th:href="@{/dashboard/deleteCard/{id}(id=${card.id})}">Delete</a>
+                        <br>
                         <br>
                     </tr>
                 </div>
