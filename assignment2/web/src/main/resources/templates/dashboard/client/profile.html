@@ -41,9 +41,9 @@
         <div class="card">
             <div class="card-header">
                 Add/Edit Profile
-            </div>
+            </div><!--
             <div class="card-body">
-                <form th:action="@{/dashboard/clientProfileAdd}" th:object="${user}"   method="post" >
+                <form th:action="@{/dashboard/clientProfileUpdate}" th:object="${user}" method="post">
                     <div class="row">
                         <div class="col">
                             <label for="firstName">First Name*</label>
@@ -62,57 +62,59 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="email">Email*</label>
-                            <input type="text" class="form-control" id="email" placeholder="Enter Email"
-                                   th:field="*{email}">
-                            <div class="text text-danger" th:if="${#fields.hasErrors('email')}"
-                                 th:errors="*{email}"></div>
+                            <label for="birthDay">Day</label>
+                            <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
+                                   th:field="*{day}">
+                        </div>
+                        <div class="col">
+                            <label for="birthMonth">Month</label>
+                            <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
+                                   th:field="*{month}">
+                        </div>
+                        <div class="col">
+                            <label for="birthYear">Year</label>
+                            <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
+                                   th:field="*{year}">
+                        </div>
+                    </div>
+                    <button type="submit" name="action" value="update" class="btn btn-primary">Update Client</button>
+                </form>
+            </div>-->
+            <div class="card-body">
+                <form th:action="@{/dashboard/clientProfile}" th:object="${profile}" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <label for="profileEmail">Email*</label>
+                            <input type="text" class="form-control" id="profileEmail" placeholder="Enter Email"
+                                   th:field="*{profileEmail}">
                         </div>
                     </div>
                     <label>Date of Birth</label>
                     <div class="row">
                         <div class="col">
-                            <label for="email">Day</label>
-                            <input type="text" class="form-control" id="birthDay" placeholder="Enter birth day #"
-                                   th:field="*{day}">
-                        </div>
-                        <div class="col">
-                            <label for="email">Month</label>
-                            <input type="text" class="form-control" id="birthMonth" placeholder="Enter birth month #"
-                                   th:field="*{month}">
-                        </div>
-                        <div class="col">
-                            <label for="email">Year</label>
-                            <input type="text" class="form-control" id="birthYear" placeholder="Enter birth day #"
-                                   th:field="*{year}">
+                            <label for="profileAddress">Street</label>
+                            <input type="text" class="form-control" id="profileAddress" placeholder="Street"
+                                   th:field="*{profileAddress}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="streetName">Street</label>
-                            <input type="text" class="form-control" id="streetName" placeholder="Street"
-                                   th:field="*{streetName}">
+                            <label for="profileCity">City</label>
+                            <input type="text" class="form-control" id="profileCity" placeholder="City"
+                                   th:field="*{profileCity}">
+                        </div>
+                        <div class="col">
+                            <label for="profileCountry">Country</label>
+                            <input type="text" class="form-control" id="profileCountry" placeholder="Country"
+                                   th:field="*{profileCountry}">
+                        </div>
+                        <div class="col">
+                            <label for="profilePostal">Postal</label>
+                            <input type="text" class="form-control" id="profilePostal" placeholder="Postal"
+                                   th:field="*{profilePostal}">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="city">City</label>
-                            <input type="text" class="form-control" id="city" placeholder="City"
-                                   th:field="*{city}">
-                        </div>
-                        <div class="col">
-                            <label for="country">Country</label>
-                            <input type="text" class="form-control" id="country" placeholder="Country"
-                                   th:field="*{country}">
-                        </div>
-                        <div class="col">
-                            <label for="postal">Postal</label>
-                            <input type="text" class="form-control" id="postal" placeholder="Postal"
-                                   th:field="*{postal}">
-                        </div>
-                    </div>
-                    <button type="submit" name="action" value="add" class="btn btn-primary">Add Profile</button>
-                    <button type="submit" name="action" value="update" class="btn btn-primary">Update Profile</button>
+                    <button type="submit" name="action" value="addProfile" class="btn btn-primary">Add/Update Profile</button>
                 </form>
             </div>
         </div>
@@ -121,14 +123,22 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    Current Profile
+                    Profiles
                 </div>
                 <div class="card-body">
-                    <p style="font-weight: bold">Email: <span style="font-weight: normal" th:text="${user.firstName} + ${ user.lastName}">Bosco</span></p>
-                    <p style="font-weight: bold">Address: <span style="font-weight: normal" th:text="${user.streetName}">123 Some street</span></p>
-                    <p style="font-weight: bold">City: <span style="font-weight: normal" th:text="${user.city}">Toronto</span></p>
-                    <p style="font-weight: bold">Country: <span style="font-weight: normal" th:text="${user.country}">Canada</span></p>
-                    <p style="font-weight: bold">Default Billing: <span style="font-weight: normal" th:text="${user.country}">Yes</span></p>
+                    <tr th:each="profile : ${profiles}">
+                        <p th:text="'Email: ' + ${profile.profileEmail}"></p>
+                        <p th:text="'Address: ' + ${profile.profileAddress}"></p>
+                        <p th:text="'City: ' + ${profile.profileCity}"></p>
+                        <p th:text="'Country: ' + ${profile.profileCountry}"></p>
+                        <p th:text="'Default Billing: ' + ${profile.defaultBilling}"></p>
+                        <p th:text="'Default Shipping: ' + ${profile.defaultShipping}"></p>
+                        <form th:method="update" th:action="@{/dashboard/clientProfile/(profile=${profile.id})}">
+                            <input type="submit" value="update" class="btn btn-primary"/>
+                        </form>
+                        <a class="btn" th:href="@{/dashboard/deleteClient/{id}(id=${profile.id})}">Delete</a>
+                        <br>
+                    </tr>
                 </div>
             </div>
         </div>

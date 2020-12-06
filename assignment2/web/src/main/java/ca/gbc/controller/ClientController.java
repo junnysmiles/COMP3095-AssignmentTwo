@@ -12,15 +12,14 @@
 package ca.gbc.controller;
 
 import ca.gbc.model.*;
-import ca.gbc.repositories.ClientRepo;
-import ca.gbc.repositories.CreditCardRepo;
-import ca.gbc.repositories.TicketRepo;
-import ca.gbc.repositories.UserRepo;
+import ca.gbc.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -38,38 +37,61 @@ public class ClientController {
     ClientRepo clientRepo;
     @Autowired
     TicketRepo ticketRepo;
+    @Autowired
+    ProfileRepo profileRepo;
 
     @RequestMapping("/dashboard/clientProfile")
     public String clientProfile(Model model, Authentication authentication) {
-        User user = userRepo.findByEmail(authentication.getName());
+        Client user = clientRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
+        model.addAttribute("profile", new Profile());
+        model.addAttribute("profiles", profileRepo.findAll());
         return "dashboard/client/profile";
     }
 
-    @RequestMapping(value = "/dashboard/clientProfileAdd", params = "action=add")
+    @RequestMapping(value = "/dashboard/clientProfile", method = RequestMethod.POST)
     public String clientProfileAdd(Model model, Authentication authentication, @Valid Profile profile, BindingResult bindingResult) {
-        User user = userRepo.findByEmail(authentication.getName());
-        model.addAttribute("user", user);
+        Client user = clientRepo.findByEmail(authentication.getName());
         if(bindingResult.hasErrors()){
             System.out.println("BINDING ERROR");
             return "dashboard/client/profile";
-        } else {
+        } else {//add new profile
+            Profile currentProfile = profileRepo.findById(user.getId()).orElse(null);
+            if(currentProfile == null){
+                System.out.println(bindingResult);
+                profile.setClient(user);
+                profile.setDefaultShipping(false);
+                profile.setDefaultBilling(false);
+                profileRepo.save(profile);
+            }else {
+                currentProfile.setClient(user);
+                currentProfile.setDefaultBilling(false);
+                currentProfile.setDefaultShipping(false);
+                currentProfile.setProfileCountry(profile.getProfileCountry());
+                currentProfile.setProfileAddress(profile.getProfileAddress());
+                currentProfile.setProfileCity(profile.getProfileCity());
+                currentProfile.setProfileEmail(profile.getProfileEmail());
+                currentProfile.setProfilePostal(profile.getProfilePostal());
+                profileRepo.save(profile);
+            }
         }
-        return "dashboard/client/profile";
-    }
-
-    @RequestMapping(value = "/dashboard/clientProfileAdd", params = "action=update")
-    public String clientProfileUpdate(Model model, Authentication authentication, @Valid Profile profile, BindingResult bindingResult) {
-        User user = userRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
-        if(bindingResult.hasErrors()){
-            System.out.println("BINDING ERROR");
-            return "dashboard/client/profile";
-        } else {
-
-        }
+        model.addAttribute("profile", profile);
+        model.addAttribute("profiles", profileRepo.findAll());
         return "dashboard/client/profile";
     }
+
+    //delete profile
+    @RequestMapping("/dashboard/deleteClient/{id}")
+    public String deleteProfile(@PathVariable("id") Long id, Model model, Authentication authentication){
+        profileRepo.deleteById(id);
+        Client user = clientRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        model.addAttribute("profile", new Profile());
+        model.addAttribute("profiles", profileRepo.findAll());
+        return "dashboard/client/profile";
+    }
+
     //mapping for credit profile page
     @RequestMapping("/dashboard/clientCredit")
     public String clientCredit(Model model, Authentication authentication) {

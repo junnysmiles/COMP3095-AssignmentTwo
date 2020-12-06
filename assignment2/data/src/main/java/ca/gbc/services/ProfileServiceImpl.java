@@ -8,6 +8,8 @@
  * ****************************************************************************************************************/
 package ca.gbc.services;
 
+import ca.gbc.model.Client;
+import ca.gbc.model.CreditCard;
 import ca.gbc.model.Profile;
 import ca.gbc.repositories.ProfileRepo;
 import org.springframework.stereotype.Service;
@@ -29,7 +31,6 @@ public class ProfileServiceImpl implements ProfileService{
         profileRepo.findAll().forEach(profiles::add);
         return profiles;
     }
-
     @Override
     public Profile findById(Long aLong) {
         return profileRepo.findById(aLong).orElse(null);
