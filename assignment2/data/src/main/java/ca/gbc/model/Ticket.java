@@ -28,10 +28,15 @@ public class Ticket {
     @NotBlank(message = "Message cannot be blank")
     private String message;
     private LocalDateTime timeStamp;
-    private Boolean read;
+    private Boolean read = false;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private Set<User> users;
+
+    public Ticket() {}
+    public Ticket(Long ticketNumber) {
+        this.ticketNumber = ticketNumber;
+    }
 
     public Long getId() {
         return id;
@@ -95,6 +100,10 @@ public class Ticket {
 
     public void setUsers(Set<User> users) {
         this.users = users;
+    }
+
+    public void setUser(User user) {
+        users.add(user);
     }
 
     public String getMessage() {

@@ -56,7 +56,7 @@ public class User {
     @NotBlank(message = "Postal cannot be empty")
     private String postal;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private Set<Ticket> tickets;
 
     public Long getId() {
@@ -129,6 +129,10 @@ public class User {
 
     public void setTickets(Set<Ticket> tickets) {
         this.tickets = tickets;
+    }
+
+    public void setTicket(Ticket ticket) {
+        tickets.add(ticket);
     }
 
     public String getDay() {

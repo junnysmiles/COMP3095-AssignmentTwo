@@ -15,7 +15,6 @@ import ca.gbc.model.*;
 import ca.gbc.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -24,8 +23,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Controller
 public class ClientController {
@@ -40,6 +41,8 @@ public class ClientController {
     TicketRepo ticketRepo;
     @Autowired
     ProfileRepo profileRepo;
+    @Autowired
+    AdminRepo adminRepo;
 
     @RequestMapping("/dashboard/clientProfile")
     public String clientProfile(Model model, Authentication authentication) {
@@ -175,17 +178,26 @@ public class ClientController {
     //mapping for when a client sends a support ticket
     @RequestMapping(value = "/dashboard/clientSupport", method = RequestMethod.POST)
     public String sendSupport(Model model, Authentication authentication, @Valid Ticket ticket, BindingResult bindingResult) {
-        User user = userRepo.findByEmail(authentication.getName());
+        Client user = clientRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
         if(bindingResult.hasErrors()){
             System.out.println("BINDING RESULT ERROR");
             return "dashboard/client/support";
-        } else {
+        } else {//save ticket
             ticket.setEmail(user.getEmail());
             String name = user.getFirstName() + ' ' + user.getLastName();
             ticket.setFirstName(name);
             ticket.setTimeStamp(LocalDateTime.now());
             ticketRepo.save(ticket);
+            //save to client inbox
+            ticket.setTicketNumber(ticket.getId());
+            ticketRepo.save(ticket);
+            user.setTicket(ticket);
+            clientRepo.save(user);
+            //assign to admin and save
+            Admin admin = adminRepo.findByEmail("admin@isp.net");
+            admin.setTicket(ticket);
+            adminRepo.save(admin);
             //reset ticket model
             model.addAttribute("ticket", new Ticket());
             return "dashboard/client/support";
