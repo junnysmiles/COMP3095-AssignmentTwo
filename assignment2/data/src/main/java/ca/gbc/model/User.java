@@ -11,6 +11,7 @@ package ca.gbc.model;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
@@ -33,9 +34,9 @@ public class User {
     @Pattern(regexp="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,128}$",
     message = "Password must be between 6-12 chars and contain 1 uppercase letter and 1 special character")
     private String password;
-    private LocalDate lastLogin;
-    private LocalDate lastUpdate;
-    private LocalDate accountCreated;
+    private LocalDateTime lastLogin;
+    private LocalDateTime lastUpdate;
+    private LocalDateTime accountCreated;
 
     //DOB information
     @NotBlank(message = "Day cannot be empty")
@@ -98,27 +99,27 @@ public class User {
         this.password = password;
     }
 
-    public LocalDate getLastLogin() {
+    public LocalDateTime getLastLogin() {
         return lastLogin;
     }
 
-    public void setLastLogin(LocalDate lastLogin) {
+    public void setLastLogin(LocalDateTime lastLogin) {
         this.lastLogin = lastLogin;
     }
 
-    public LocalDate getLastUpdate() {
+    public LocalDateTime getLastUpdate() {
         return lastUpdate;
     }
 
-    public void setLastUpdate(LocalDate lastUpdate) {
+    public void setLastUpdate(LocalDateTime lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 
-    public LocalDate getAccountCreated() {
+    public LocalDateTime getAccountCreated() {
         return accountCreated;
     }
 
-    public void setAccountCreated(LocalDate accountCreated) {
+    public void setAccountCreated(LocalDateTime accountCreated) {
         this.accountCreated = accountCreated;
     }
 

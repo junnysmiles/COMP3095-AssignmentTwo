@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Controller
 public class ClientController {
@@ -49,6 +50,31 @@ public class ClientController {
         return "dashboard/client/profile";
     }
 
+    //update client information
+    @RequestMapping("/dashboard/clientUpdate")
+    public String clientInfoUpdate(Model model, Authentication authentication, Client client, BindingResult bindingResult){
+        Client user = clientRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        if(bindingResult.hasErrors()){
+            System.out.println("BINDING ERROR");
+            System.out.println(bindingResult);
+            return "dashboard/client/profile";
+        }else {
+            user.setFirstName(client.getFirstName());
+            user.setLastName(client.getLastName());
+            user.setDay(client.getDay());
+            user.setMonth(client.getMonth());
+            user.setYear(client.getYear());
+            user.setLastUpdate(LocalDateTime.now());
+            userRepo.save(user);
+        }
+        model.addAttribute("user", clientRepo.findByEmail(authentication.getName()));
+        model.addAttribute("profile", new Profile());
+        model.addAttribute("profiles", profileRepo.findAll());
+        return "dashboard/client/profile";
+    }
+
+    //create/update profile
     @RequestMapping(value = "/dashboard/clientProfile", method = RequestMethod.POST)
     public String clientProfileAdd(Model model, Authentication authentication, @Valid Profile profile, BindingResult bindingResult) {
         Client user = clientRepo.findByEmail(authentication.getName());
@@ -56,30 +82,15 @@ public class ClientController {
             System.out.println("BINDING ERROR");
             return "dashboard/client/profile";
         } else {//add new profile
-            Profile currentProfile = profileRepo.findById(user.getId()).orElse(null);
-            if(currentProfile == null){
-                System.out.println(bindingResult);
-                profile.setClient(user);
-                profile.setDefaultShipping(false);
-                profile.setDefaultBilling(false);
-                profileRepo.save(profile);
-            }else {
-                currentProfile.setClient(user);
-                currentProfile.setDefaultBilling(false);
-                currentProfile.setDefaultShipping(false);
-                currentProfile.setProfileCountry(profile.getProfileCountry());
-                currentProfile.setProfileAddress(profile.getProfileAddress());
-                currentProfile.setProfileCity(profile.getProfileCity());
-                currentProfile.setProfileEmail(profile.getProfileEmail());
-                currentProfile.setProfilePostal(profile.getProfilePostal());
-                profileRepo.save(profile);
-            }
+            profile.setClient(user);
+            profileRepo.save(profile);
         }
         model.addAttribute("user", user);
         model.addAttribute("profile", profile);
         model.addAttribute("profiles", profileRepo.findAll());
         return "dashboard/client/profile";
     }
+
 
     //delete profile
     @RequestMapping("/dashboard/deleteClient/{id}")
@@ -113,6 +124,7 @@ public class ClientController {
         return "dashboard/client/credit";
     }
 
+    //add/update a new credit card
     @RequestMapping(value = "/dashboard/clientCredit", method = RequestMethod.POST)
     public String addCreditCard(Model model, Authentication authentication, @Valid CreditCard creditCard,BindingResult bindingResult) {
         Client user = clientRepo.findByEmail(authentication.getName());
@@ -143,6 +155,7 @@ public class ClientController {
         return "dashboard/client/credit";
     }
 
+    //inbox mapping
     @RequestMapping("/dashboard/clientInbox")
     public String clientInbox(Model model, Authentication authentication) {
         User user = userRepo.findByEmail(authentication.getName());
@@ -150,6 +163,7 @@ public class ClientController {
         return "dashboard/client/inbox";
     }
 
+    //support page mapping
     @RequestMapping("/dashboard/clientSupport")
     public String clientSupport(Model model, Authentication authentication) {
         User user = userRepo.findByEmail(authentication.getName());
@@ -170,7 +184,7 @@ public class ClientController {
             ticket.setEmail(user.getEmail());
             String name = user.getFirstName() + ' ' + user.getLastName();
             ticket.setFirstName(name);
-            ticket.setTimeStamp(LocalDate.now());
+            ticket.setTimeStamp(LocalDateTime.now());
             ticketRepo.save(ticket);
             //reset ticket model
             model.addAttribute("ticket", new Ticket());

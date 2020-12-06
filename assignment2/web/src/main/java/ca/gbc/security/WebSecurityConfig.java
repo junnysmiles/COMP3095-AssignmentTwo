@@ -10,6 +10,7 @@
  * ****************************************************************************************************************/
 package ca.gbc.security;
 
+import ca.gbc.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,6 +32,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private UserDetailsService userDetailsService;
+
+    @Autowired
+    private UserRepo userRepo;
 
     @Autowired
     public void ApplicationSecurityConfig(PasswordEncoder passwordEncoder) {

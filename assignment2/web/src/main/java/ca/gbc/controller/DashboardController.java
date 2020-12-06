@@ -20,7 +20,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 @Controller
@@ -41,7 +41,8 @@ public class DashboardController {
         //find user details by email
         User user = userRepo.findByEmail(authentication.getName());
         //set last login timestamp
-        user.setLastLogin(LocalDate.now());
+        user.setLastLogin(LocalDateTime.now());
+        userRepo.save(user);
         model.addAttribute("user", user);
         //redirect based on admin or client
         if(user instanceof Admin){

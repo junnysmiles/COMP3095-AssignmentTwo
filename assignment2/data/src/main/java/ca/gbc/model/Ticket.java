@@ -11,6 +11,7 @@ package ca.gbc.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
@@ -26,7 +27,7 @@ public class Ticket {
     private String subject;
     @NotBlank(message = "Message cannot be blank")
     private String message;
-    private LocalDate timeStamp;
+    private LocalDateTime timeStamp;
     private Boolean read;
 
     @ManyToMany
@@ -64,11 +65,11 @@ public class Ticket {
         this.subject = subject;
     }
 
-    public LocalDate getTimeStamp() {
+    public LocalDateTime getTimeStamp() {
         return timeStamp;
     }
 
-    public void setTimeStamp(LocalDate timeStamp) {
+    public void setTimeStamp(LocalDateTime timeStamp) {
         this.timeStamp = timeStamp;
     }
 

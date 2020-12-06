@@ -18,7 +18,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -32,7 +32,7 @@ public class DataLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {/*
+    public void run(String... args) throws Exception {
         Admin user = new Admin();
         user.setFirstName("Nick");
         user.setLastName("Chinsen");
@@ -47,7 +47,7 @@ public class DataLoader implements CommandLineRunner {
         user.setMonth("10");
         user.setYear("1995");
         user.setEmail("admin@isp.net");
-        user.setAccountCreated(LocalDate.now());
+        user.setAccountCreated(LocalDateTime.now());
         userRepo.save(user);
 
         Admin user2 = new Admin();
@@ -64,7 +64,7 @@ public class DataLoader implements CommandLineRunner {
         user2.setMonth("10");
         user2.setYear("1995");
         user2.setEmail("admin@admin.com");
-        user2.setAccountCreated(LocalDate.now());
+        user2.setAccountCreated(LocalDateTime.now());
         userRepo.save(user2);
 
         Client user3 = new Client();
@@ -81,7 +81,7 @@ public class DataLoader implements CommandLineRunner {
         user3.setMonth("10");
         user3.setYear("1995");
         user3.setEmail("client@client.com");
-        user3.setAccountCreated(LocalDate.now());
-        userRepo.save(user3);*/
+        user3.setAccountCreated(LocalDateTime.now());
+        userRepo.save(user3);
     }
 }

@@ -38,12 +38,11 @@
     <h1>My Profile</h1>
     <div class="row">
         <div class="col">
-        <div class="card">
             <div class="card-header">
-                Add/Edit Profile
-            </div><!--
+                Edit Name/DOB
+            </div>
             <div class="card-body">
-                <form th:action="@{/dashboard/clientProfileUpdate}" th:object="${user}" method="post">
+                <form th:action="@{/dashboard/clientUpdate}" th:object="${user}" method="post">
                     <div class="row">
                         <div class="col">
                             <label for="firstName">First Name*</label>
@@ -77,9 +76,33 @@
                                    th:field="*{year}">
                         </div>
                     </div>
-                    <button type="submit" name="action" value="update" class="btn btn-primary">Update Client</button>
+                    <button type="submit" name="action" value="updateClient" class="btn btn-primary">Update Client</button>
                 </form>
-            </div>-->
+            </div>
+        </div>
+        <!--Client Information-->
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Profiles
+                </div>
+                <div class="card-body">
+                        <p th:text="'First Name: ' + ${user.firstName}"></p>
+                        <p th:text="'Last Name: ' + ${user.lastName}"></p>
+                        <p th:text="'DOB: ' + ${user.day} + '/' + ${user.month} + '/' + ${user.year}"></p>
+                        <br>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--update/add profile here-->
+    <div class="row">
+        <div class="col">
+        <div class="card">
+            <div class="card-header">
+                Add/Edit Profile
+            </div>
             <div class="card-body">
                 <form th:action="@{/dashboard/clientProfile}" th:object="${profile}" method="post">
                     <div class="row">
@@ -112,6 +135,16 @@
                             <label for="profilePostal">Postal</label>
                             <input type="text" class="form-control" id="profilePostal" placeholder="Postal"
                                    th:field="*{profilePostal}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="defaultBilling">Default Billing</label>
+                            <input type="checkbox" id="defaultBilling" th:checked="${profile.setDefaultBilling(true)}"/>
+                        </div>
+                        <div class="col">
+                            <label for="defaultShipping">Default Shipping</label>
+                            <input type="checkbox" id="defaultShipping" th:checked="${profile.setDefaultShipping(true)}"/>
                         </div>
                     </div>
                     <button type="submit" name="action" value="addProfile" class="btn btn-primary">Add/Update Profile</button>

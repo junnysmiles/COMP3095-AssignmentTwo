@@ -8,6 +8,8 @@
  *              shipping/billing address
  * ****************************************************************************************************************/
 package ca.gbc.model;
+import org.hibernate.annotations.ColumnDefault;
+
 import javax.persistence.*;
 
 @Entity
@@ -21,8 +23,8 @@ public class Profile{
     private String profileCity;
     private String profileCountry;
     private String profilePostal;
-    private Boolean defaultBilling;
-    private Boolean defaultShipping;
+    private Boolean defaultBilling = false;
+    private Boolean defaultShipping = false;
     @ManyToOne
     private Client client;
 
