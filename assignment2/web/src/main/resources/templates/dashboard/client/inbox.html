@@ -47,23 +47,11 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr th:each="ticket : ${tickets}">
             <th scope="row">[ ]</th>
-            <td>1241</td>
-            <td th:text="${user.lastLogin}"></td>
-            <td>Help my PC wont turn on</td>
-            <td>
-                <div class="btn-group" role="group" aria-label="options">
-                    <button type="button" class="btn btn-secondary">Read</button>
-                    <button type="button" class="btn btn-secondary">Remove</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">[ ]</th>
-            <td>1241</td>
-            <td th:text="${user.lastLogin}"></td>
-            <td>Can't connect to internet</td>
+            <td th:text="${ticket.ticketNumber}">1241</td>
+            <td th:text="${ticket.timeStamp}"></td>
+            <td th:text="${ticket.subject}">Help my PC wont turn on</td>
             <td>
                 <div class="btn-group" role="group" aria-label="options">
                     <button type="button" class="btn btn-secondary">Read</button>

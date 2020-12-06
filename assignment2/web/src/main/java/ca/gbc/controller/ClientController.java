@@ -162,6 +162,7 @@ public class ClientController {
     @RequestMapping("/dashboard/clientInbox")
     public String clientInbox(Model model, Authentication authentication) {
         User user = userRepo.findByEmail(authentication.getName());
+        model.addAttribute("tickets", user.getTickets());
         model.addAttribute("user", user);
         return "dashboard/client/inbox";
     }

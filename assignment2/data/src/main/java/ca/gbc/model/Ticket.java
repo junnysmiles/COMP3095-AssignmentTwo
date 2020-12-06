@@ -33,11 +33,6 @@ public class Ticket {
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private Set<User> users;
 
-    public Ticket() {}
-    public Ticket(Long ticketNumber) {
-        this.ticketNumber = ticketNumber;
-    }
-
     public Long getId() {
         return id;
     }
