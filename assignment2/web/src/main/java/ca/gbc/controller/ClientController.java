@@ -7,6 +7,7 @@
  *       30/11/2020 -Nick Updated request mappings
  *       02/12/2020 -Nick Modified credit profile mappings
  *       05/12/2020 -Nick Modified profile addition mapping
+ *       06/12/2020 -Nick Added functionality for inbox
  * Description: Controller for Clients after they successfully login
  * ****************************************************************************************************************/
 package ca.gbc.controller;
@@ -160,6 +161,27 @@ public class ClientController {
         User user = userRepo.findByEmail(authentication.getName());
         model.addAttribute("tickets", user.getTickets());
         model.addAttribute("user", user);
+        return "dashboard/client/inbox";
+    }
+
+    //read message shows all tickets
+    @RequestMapping("/dashboard/inbox/{id}")
+    public String inboxRead(@PathVariable("id") Long id, Model model, Authentication authentication) {
+        Client user = clientRepo.findByEmail(authentication.getName());
+        model.addAttribute("tickets", ticketRepo.findTicketsByTicketNumber(id));
+        model.addAttribute("user", user);
+        return "dashboard/client/ticket";
+    }
+
+    //delete ticket in inbox
+    @RequestMapping("/dashboard/deleteTicket/{id}")
+    public String deleteTicket(@PathVariable("id") Long id, Model model, Authentication authentication){
+        Client user = clientRepo.findByEmail(authentication.getName());
+        Ticket ticket = ticketRepo.findById(id).orElse(null);
+        user.removeTicket(ticket);
+        userRepo.save(user);
+        model.addAttribute("user", user);
+        model.addAttribute("tickets", user.getTickets());
         return "dashboard/client/inbox";
     }
 

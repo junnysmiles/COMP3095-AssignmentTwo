@@ -134,6 +134,10 @@ public class User {
     public void setTicket(Ticket ticket) {
         tickets.add(ticket);
     }
+    public void removeTicket(Ticket ticket) {
+        tickets.remove(ticket);
+        ticket.getUsers().remove(this);
+    }
 
     public String getDay() {
         return day;

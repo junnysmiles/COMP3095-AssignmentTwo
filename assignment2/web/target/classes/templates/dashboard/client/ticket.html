@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
+    <title>View Ticket</title>
     <!-- CSS only -->
     <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 </head>
@@ -36,33 +36,25 @@
 <!--CONTENT STARTS HERE-->
 <div class="container">
     <h1>Inbox</h1>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th scope="col">Select</th>
-            <th scope="col">Ticket</th>
-            <th scope="col">Date Added</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="ticket : ${tickets}">
-            <th scope="row">[ ]</th>
-            <td th:text="${ticket.ticketNumber}">1241</td>
-            <td th:text="${ticket.timeStamp}"></td>
-            <td th:text="${ticket.subject}">Help my PC wont turn on</td>
-            <td>
-                <form th:method="read" th:action="@{/dashboard/inbox/{id}(id=${ticket.ticketNumber})}">
-                    <input type="submit" value="read" class="btn btn-primary"/>
-                </form>
-                <form th:method="delete" th:action="@{/dashboard/deleteTicket/{id}(id=${ticket.ticketNumber})}">
-                    <input type="submit" value="delete" class="btn btn-primary"/>
-                </form>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Support Ticket
+                </div>
+                <div class="card-body">
+                    <tr th:each="ticket : ${tickets}">
+                        <p th:text="'Ticket Number: ' + ${ticket.ticketNumber}"></p>
+                        <p th:text="'Date Added: ' + ${ticket.timeStamp}"></p>
+                        <p th:text="'Subject: ' + ${ticket.subject}"></p>
+                        <p th:text="'Message: ' + ${ticket.message}"></p>
+                    </tr>
+                    <form th:method="inbox" th:action="@{/dashboard/clientInbox}">
+                        <input type="submit" value="inbox" class="btn btn-primary"/>
+                    </form>
+                </div>
+            </div>
+        </div>
 </div>
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -53,10 +53,12 @@
             <td th:text="${ticket.timeStamp}"></td>
             <td th:text="${ticket.subject}">Help my PC wont turn on</td>
             <td>
-                <div class="btn-group" role="group" aria-label="options">
-                    <button type="button" class="btn btn-secondary">Read</button>
-                    <button type="button" class="btn btn-secondary">Remove</button>
-                </div>
+                <form th:method="read" th:action="@{/dashboard/inbox/{id}(id=${ticket.ticketNumber})}">
+                    <input type="submit" value="read" class="btn btn-primary"/>
+                </form>
+                <form th:method="delete" th:action="@{/dashboard/deleteTicket/{id}(id=${ticket.ticketNumber})}">
+                    <input type="submit" value="delete" class="btn btn-primary"/>
+                </form>
             </td>
         </tr>
         </tbody>

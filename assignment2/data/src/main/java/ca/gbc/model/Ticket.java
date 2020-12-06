@@ -101,6 +101,11 @@ public class Ticket {
         users.add(user);
     }
 
+    public void removeUser(User user) {
+        users.remove(user);
+        user.getTickets().remove(this);
+    }
+
     public String getMessage() {
         return message;
     }
