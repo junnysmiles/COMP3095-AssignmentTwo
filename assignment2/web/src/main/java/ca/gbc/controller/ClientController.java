@@ -24,9 +24,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 @Controller
 public class ClientController {
@@ -112,28 +109,29 @@ public class ClientController {
         cardRepo.deleteById(id);
         Client user = clientRepo.findByEmail(authentication.getName());
         model.addAttribute("user", user);
-        model.addAttribute("profile", new Profile());
-        model.addAttribute("profiles", profileRepo.findAll());
-        return "dashboard/client/credit";
-    }
-
-    //mapping for credit profile page
-    @RequestMapping("/dashboard/clientCredit")
-    public String clientCredit(Model model, Authentication authentication) {
-        Client user = clientRepo.findByEmail(authentication.getName());
-        model.addAttribute("user", user);
         model.addAttribute("card", new CreditCard());
         model.addAttribute("cards", cardRepo.findAll());
         return "dashboard/client/credit";
     }
 
-    //add/update a new credit card
+    //mapping for credit profile page
+    @RequestMapping("/dashboard/clientCredit")
+    public String clientCredit(Model model, Authentication authentication, CreditCard creditCard) {
+        Client user = clientRepo.findByEmail(authentication.getName());
+        model.addAttribute("user", user);
+        model.addAttribute("card", creditCard);
+        model.addAttribute("cards", cardRepo.findAll());
+        return "dashboard/client/credit";
+    }
+
+    //add/update a new credit cardt6y
     @RequestMapping(value = "/dashboard/clientCredit", method = RequestMethod.POST)
     public String addCreditCard(Model model, Authentication authentication, @Valid CreditCard creditCard,BindingResult bindingResult) {
         Client user = clientRepo.findByEmail(authentication.getName());
         //reroute back to registration if any errors
         if(bindingResult.hasErrors()) {
             System.out.println("BINDING RESULT ERROR");
+            System.out.println(bindingResult);
         } else { //create new client
             //check if card exists
 
@@ -142,10 +140,8 @@ public class ClientController {
                 creditCard.setClient(user);
                 cardRepo.save(creditCard);
             }else {//card exists so update values
-                creditCard1.setCardholderName(creditCard.getCardholderName());
-                creditCard1.setCCNumber(creditCard.getCCNumber());
                 creditCard1.setClient(user);
-                creditCard1.setDefaultCC(true);
+                creditCard1.setDefaultCC(creditCard.getDefaultCC());
                 creditCard1.setExpirationMonth(creditCard.getExpirationMonth());
                 creditCard1.setExpirationYear(creditCard.getExpirationMonth());
                 creditCard1.setCardType(creditCard.getCardType());

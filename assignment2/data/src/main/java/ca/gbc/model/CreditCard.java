@@ -34,7 +34,7 @@ public class CreditCard {
 
     @NotNull(message = "The Card Number cannot be null")
     private Long CCNumber;
-    private Boolean defaultCC;
+    private Boolean defaultCC = false;
 
     @ManyToOne
     private Client client;

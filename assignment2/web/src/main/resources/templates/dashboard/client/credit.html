@@ -97,9 +97,9 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Save as Default/Preferred method</label>
+                                <div class="col">
+                                    <label for="defaultBilling">Default Credit Card</label>
+                                    <input type="checkbox" id="defaultBilling" th:checked="${card.setDefaultCC(true)}"/>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                         <p th:text="'Card Holder: ' + ${card.cardholderName}"></p>
                         <p th:text="'Card Number: ' + ${card.CCNumber}"></p>
                         <p th:text="'Default: ' + ${card.defaultCC}"></p>
-                        <form th:method="update" th:action="@{/dashboard/creditProfile/(card=${card.id})}">
+                        <form th:method="update" th:action="@{/dashboard/clientCredit/(card=${card.id})}">
                             <input type="submit" value="update" class="btn btn-primary"/>
                         </form>
                         <a class="btn" th:href="@{/dashboard/deleteCard/{id}(id=${card.id})}">Delete</a>
